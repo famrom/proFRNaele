@@ -152,6 +152,20 @@ function playClack() {
   thump.connect(thumpGain); thumpGain.connect(ctx.destination);
   thump.start(now); thump.stop(now + 0.13);
 }
+function playRingtone() {
+  const ctx = getAudioCtx(); const now = ctx.currentTime;
+  [0, 0.55, 1.1].forEach((offset) => {
+    const osc = ctx.createOscillator(); osc.type = "sine";
+    osc.frequency.value = 440;
+    const gain = ctx.createGain();
+    gain.gain.setValueAtTime(0.0001, now + offset);
+    gain.gain.exponentialRampToValueAtTime(0.2, now + offset + 0.05);
+    gain.gain.exponentialRampToValueAtTime(0.2, now + offset + 0.3);
+    gain.gain.exponentialRampToValueAtTime(0.0001, now + offset + 0.38);
+    osc.connect(gain); gain.connect(ctx.destination);
+    osc.start(now + offset); osc.stop(now + offset + 0.4);
+  });
+}
 function playSfx(type) {
   if (type === "engine") playEngine();
   else if (type === "thunder") playThunder();
@@ -161,6 +175,7 @@ function playSfx(type) {
   else if (type === "whoosh") playWhoosh();
   else if (type === "sip") playSip();
   else if (type === "clack") playClack();
+  else if (type === "ringtone") playRingtone();
 }
 
 // ---- Speech (dialogue / narration) with punctuation-based prosody ----

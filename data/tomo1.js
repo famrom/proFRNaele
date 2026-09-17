@@ -238,6 +238,102 @@ const TOMO1 = {
             { speaker: "Madou", color: "#C77D1E", text: "Oui, maman ! Suis-moi !", type: "dialogue" }
           ]}
         ]
+      },
+      {
+        page: 6,
+        panels: [
+          { id: 61, img: "images/tomo1/comic/pagina06/panel_01.jpg", lines: [
+            { speaker: "Madou", color: "#C77D1E", text: "Génial ! Tu as beaucoup de vêtements !", type: "dialogue" },
+            { speaker: "Naele", color: "#B23A48", text: "Oui ! Et j'ai des cadeaux de Séville !", type: "dialogue" }
+          ]},
+          { id: 62, img: "images/tomo1/comic/pagina06/panel_02.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Regarde ! C'est de l'huile d'olive et du jambon d'Espagne.", type: "dialogue" },
+            { speaker: "Narrateur", color: "#5B5548", text: "Naele apporte des spécialités d'Andalousie pour la famille.", type: "narration" }
+          ]},
+          { id: 63, img: "images/tomo1/comic/pagina06/panel_03.jpg", lines: [
+            { speaker: "Madou", color: "#C77D1E", text: "Miam ! J'adore le jambon ! Merci Naele !", type: "dialogue" }
+          ]},
+          { id: 64, img: "images/tomo1/comic/pagina06/panel_04.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Et ça, c'est pour le frigo. Une danseuse de flamenco.", type: "dialogue" }
+          ]},
+          { id: 65, img: "images/tomo1/comic/pagina06/panel_05.jpg", lines: [
+            { speaker: "Madou", color: "#C77D1E", text: "Waouh... Le plastique est bizarre... Le style est très original ! C'est très moderne !", type: "dialogue" },
+            { speaker: "Narrateur", color: "#5B5548", text: "Le style moderne de 2027 surprend beaucoup Madou.", type: "narration" }
+          ]},
+          { id: 66, img: "images/tomo1/comic/pagina06/panel_06.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Ah oui... En 1992, on ne fabrique pas des aimants comme ça.", type: "dialogue" }
+          ]},
+          { id: 67, img: "images/tomo1/comic/pagina06/panel_07.jpg", lines: [
+            { speaker: "Madou", color: "#C77D1E", text: "Oh là là ! C'est quoi ce vêtement ? C'est incroyable ! Tu habilles comme ça en Espagne ?", type: "dialogue" }
+          ]},
+          { id: 68, img: "images/tomo1/comic/pagina06/panel_08.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Heu... oui. J'aime le style moderne.", type: "dialogue" },
+            { speaker: "Madou", color: "#C77D1E", text: "En France, on ne porte pas ça ! C'est fantastique, on dirait un film de science-fiction !", type: "dialogue" }
+          ]},
+          { id: 69, img: "images/tomo1/comic/pagina06/panel_09.jpg", lines: [
+            { speaker: "Séverine", color: "#A1527A", text: "Oh, merci Naele ! C'est magnifique ! Tu es très gentille.", type: "dialogue" },
+            { speaker: "Naele", color: "#B23A48", text: "De rien, Séverine.", type: "dialogue" }
+          ]},
+          { id: 70, img: "images/tomo1/comic/pagina06/panel_10.jpg", lines: [
+            { speaker: "Madou", color: "#C77D1E", text: "Regarde Félix ! Cet objet est super drôle ! Quelle drôle de matière !", type: "dialogue" }
+          ]},
+          { id: 71, img: "images/tomo1/comic/pagina06/panel_11.jpg", lines: [
+            { speaker: "Séverine", color: "#A1527A", text: "Ah oui, c'est amusant !", type: "dialogue" },
+            { speaker: "Séverine", color: "#A1527A", text: "Naele, tu ranges tes affaires. Après, on mange !", type: "dialogue" },
+            { speaker: "Madou", color: "#C77D1E", text: "Oui, maman ! Suis-moi !", type: "dialogue" },
+            { speaker: "Naele", color: "#B23A48", text: "D'accord, merci.", type: "dialogue" }
+          ]},
+          { id: 72, img: "images/tomo1/comic/pagina06/panel_12.jpg", lines: [
+            { speaker: "Narrateur", color: "#5B5548", text: "Seule dans la pièce, la réalité du voyage temporel frappe à nouveau Naele.", type: "narration" }
+          ]}
+        ]
+      },
+      {
+        page: 7,
+        panels: [
+          { id: 73, img: "images/tomo1/comic/pagina07/panel_01.jpg", lines: [
+            { speaker: "Narrateur", color: "#5B5548", text: "Sur la table de nuit, un gros téléphone sans fil de l'époque.", type: "narration" }
+          ]},
+          { id: 74, img: "images/tomo1/comic/pagina07/panel_02.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Un téléphone fixe... sans fil. C'est le top de la technologie ici.", type: "dialogue" }
+          ]},
+          { id: 75, img: "images/tomo1/comic/pagina07/panel_03.jpg", lines: [
+            { speaker: "SFX", color: "#8A7B4E", text: "CLIC... CLIC...", type: "sfx", sfxType: "clack" }
+          ]},
+          { id: 76, img: "images/tomo1/comic/pagina07/panel_04.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Mon portable ne marche pas. Mais... est-ce que je peux appeler l'Espagne avec ça ?", type: "dialogue" },
+            { speaker: "Narrateur", color: "#5B5548", text: "Naele cherche une solution pour contacter sa maison.", type: "narration" }
+          ]},
+          { id: 77, img: "images/tomo1/comic/pagina07/panel_05.jpg", lines: [
+            { speaker: "SFX", color: "#8A7B4E", text: "BIP... BOP... BEEP...", type: "sfx", sfxType: "beep" },
+            { speaker: "Naele", color: "#B23A48", text: "S'il vous plaît... s'il vous plaît... Marche...", type: "dialogue" }
+          ]},
+          { id: 78, img: "images/tomo1/comic/pagina07/panel_06.jpg", lines: [
+            { speaker: "SFX", color: "#8A7B4E", text: "Tûûût... Tûûût... Tûûût..", type: "sfx", sfxType: "ringtone" },
+            { speaker: "Naele", color: "#B23A48", text: "Ça sonne ! Ça sonne en Espagne !", type: "dialogue" }
+          ]},
+          { id: 79, img: "images/tomo1/comic/pagina07/panel_07.jpg", lines: [
+            { speaker: "SFX", color: "#8A7B4E", text: "CLIC.", type: "sfx", sfxType: "clack" },
+            { speaker: "Papa", color: "#8B5E3C", text: "Allô ? Oui bonjour ?", type: "dialogue" },
+            { speaker: "Narrateur", color: "#5B5548", text: "Le téléphone fixe traverse le temps et connecte le futur.", type: "narration" }
+          ]},
+          { id: 80, img: "images/tomo1/comic/pagina07/panel_08.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Papa ?! Papa, c'est moi ! Naele !", type: "dialogue" }
+          ]},
+          { id: 81, img: "images/tomo1/comic/pagina07/panel_09.jpg", lines: [
+            { speaker: "Papa", color: "#8B5E3C", text: "Ah, Naele, ma chérie ! Tu es bien arrivée à Vannes ? Tout va bien avec la famille ?", type: "dialogue" }
+          ]},
+          { id: 82, img: "images/tomo1/comic/pagina07/panel_10.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Papa, écoute-moi ! Ce n'est pas normal ! Je ne suis pas en 2027 ! Je suis en 1992 !", type: "dialogue" }
+          ]},
+          { id: 83, img: "images/tomo1/comic/pagina07/panel_11.jpg", lines: [
+            { speaker: "Papa", color: "#8B5E3C", text: "Hahaha ! En 1992 ? Tu as regardé un vieux film dans l'avion ? Tu es fatiguée du voyage, ma fille.", type: "dialogue" }
+          ]},
+          { id: 84, img: "images/tomo1/comic/pagina07/panel_12.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Non, papa ! C'est vrai ! Rien ne marche ! Internet n'existe pas ! Papa !", type: "dialogue" },
+            { speaker: "Narrateur", color: "#5B5548", text: "Son père ne comprend pas la situation et s'amuse de l'histoire.", type: "narration" }
+          ]}
+        ]
       }
     ]
   },
