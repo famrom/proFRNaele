@@ -146,6 +146,98 @@ const TOMO1 = {
             { speaker: "Félix", color: "#2F6F4E", text: "Assieds-toi ici. Papa commande une boisson.", type: "dialogue" }
           ]}
         ]
+      },
+      {
+        page: 4,
+        panels: [
+          { id: 37, img: "images/tomo1/comic/pagina04/panel_01.jpg", lines: [
+            { speaker: "Félix", color: "#2F6F4E", text: "Tu AS soif ? Tu es fatiguée du voyage ?", type: "dialogue" },
+            { speaker: "Naele", color: "#B23A48", text: "Oui... Un peu. Je ne comprends pas.", type: "dialogue" }
+          ]},
+          { id: 38, img: "images/tomo1/comic/pagina04/panel_02.jpg", lines: [
+            { speaker: "Félix", color: "#2F6F4E", text: "Voilà ! Un soda pour Naele. C'est bon pour l'énergie !", type: "dialogue" },
+            { speaker: "Narrateur", color: "#5B5548", text: "Félix apporte une boisson fraîche pour calmer le stress de Naele.", type: "narration" }
+          ]},
+          { id: 39, img: "images/tomo1/comic/pagina04/panel_03.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Fido Dido ? C'est incroyable... Cette mascotte est partout.", type: "dialogue" }
+          ]},
+          { id: 40, img: "images/tomo1/comic/pagina04/panel_04.jpg", lines: [
+            { speaker: "SFX", color: "#8A7B4E", text: "GLOU... GLOU...", type: "sfx", sfxType: "sip" },
+            { speaker: "Naele", color: "#B23A48", text: "Merci, Félix. Le soda est très bon.", type: "dialogue" }
+          ]},
+          { id: 41, img: "images/tomo1/comic/pagina04/panel_05.jpg", lines: [
+            { speaker: "Narrateur", color: "#5B5548", text: "Le serveur du bar ressemble à un acteur de cinéma français.", type: "narration" }
+          ]},
+          { id: 42, img: "images/tomo1/comic/pagina04/panel_06.jpg", lines: [
+            { speaker: "Séverine", color: "#A1527A", text: "Tu es stressée ? La France est un beau pays, ne t'inquiète pas !", type: "dialogue" },
+            { speaker: "Naele", color: "#B23A48", text: "Oui, merci Séverine. Je suis contente d'être ici.", type: "dialogue" }
+          ]},
+          { id: 43, img: "images/tomo1/comic/pagina04/panel_07.jpg", lines: [
+            { speaker: "Félix", color: "#2F6F4E", text: "Allez, direction la voiture ! Vannes est à une heure d'ici.", type: "dialogue" }
+          ]},
+          { id: 44, img: "images/tomo1/comic/pagina04/panel_08.jpg", lines: [
+            { speaker: "Narrateur", color: "#5B5548", text: "La famille marche vers la voiture sur le parking de l'aéroport.", type: "narration" }
+          ]},
+          { id: 45, img: "images/tomo1/comic/pagina04/panel_09.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Pas d'écran tactile... pas de GPS... C'est une vraie voiture ancienne !", type: "dialogue" }
+          ]},
+          { id: 46, img: "images/tomo1/comic/pagina04/panel_10.jpg", lines: [
+            { speaker: "SFX", color: "#8A7B4E", text: "CLAC !", type: "sfx", sfxType: "clack" },
+            { speaker: "Narrateur", color: "#5B5548", text: "Pas de Bluetooth. Félix utilise une vieille cassette de musique.", type: "narration" }
+          ]},
+          { id: 47, img: "images/tomo1/comic/pagina04/panel_11.jpg", lines: [] },
+          { id: 48, img: "images/tomo1/comic/pagina04/panel_12.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Ce n'est pas un rêve. Je suis vraiment en 1992. Comment est-ce possible ?!", type: "dialogue" }
+          ]}
+        ]
+      },
+      {
+        page: 5,
+        panels: [
+          { id: 49, img: "images/tomo1/comic/pagina05/panel_01.jpg", lines: [
+            { speaker: "Félix", color: "#2F6F4E", text: "Bienvenue à la maison ! Nous sommes à Vannes.", type: "dialogue" },
+            { speaker: "Narrateur", color: "#5B5548", text: "La maison familiale à Vannes est typique et très ancienne.", type: "narration" }
+          ]},
+          { id: 50, img: "images/tomo1/comic/pagina05/panel_02.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Waouh... La maison est très belle !", type: "dialogue" },
+            { speaker: "Madou", color: "#C77D1E", text: "Merci ! Entrons, il fait froid dehors.", type: "dialogue" }
+          ]},
+          { id: 51, img: "images/tomo1/comic/pagina05/panel_03.jpg", lines: [
+            { speaker: "Séverine", color: "#A1527A", text: "Installe-toi dans le salon, Naele.", type: "dialogue" },
+            { speaker: "Naele", color: "#B23A48", text: "Merci, la maison est chaleureuse.", type: "dialogue" }
+          ]},
+          { id: 52, img: "images/tomo1/comic/pagina05/panel_04.jpg", lines: [
+            { speaker: "Madou", color: "#C77D1E", text: "Naele, c'est mon frère et ma sœur !", type: "dialogue" },
+            { speaker: "Narrateur", color: "#5B5548", text: "Les présentations continuent dans le salon avec la famille.", type: "narration" }
+          ]},
+          { id: 53, img: "images/tomo1/comic/pagina05/panel_05.jpg", lines: [
+            { speaker: "Frère", color: "#3D5A80", text: "Bonjour Naele ! Bienvenue !", type: "dialogue" },
+            { speaker: "Sœur", color: "#7A9E7E", text: "Bonjour Naele ! Bienvenue !", type: "dialogue" }
+          ]},
+          { id: 54, img: "images/tomo1/comic/pagina05/panel_06.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Enchantée !", type: "dialogue" }
+          ]},
+          { id: 55, img: "images/tomo1/comic/pagina05/panel_07.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Qu'est-ce que c'est ?", type: "dialogue" }
+          ]},
+          { id: 56, img: "images/tomo1/comic/pagina05/panel_08.jpg", lines: [
+            { speaker: "Narrateur", color: "#5B5548", text: "La technologie confirme la réalité de la situation.", type: "narration" }
+          ]},
+          { id: 57, img: "images/tomo1/comic/pagina05/panel_09.jpg", lines: [
+            { speaker: "SFX", color: "#8A7B4E", text: "CLIC", type: "sfx", sfxType: "clack" }
+          ]},
+          { id: 58, img: "images/tomo1/comic/pagina05/panel_10.jpg", lines: [
+            { speaker: "Présentateur", color: "#555555", text: "...Aujourd'hui, en ce mois de janvier 1992, l'actualité en France...", type: "dialogue" }
+          ]},
+          { id: 59, img: "images/tomo1/comic/pagina05/panel_11.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Les informations... La date... C'est officiel. Je suis bloquée dans le passé.", type: "dialogue" },
+            { speaker: "Narrateur", color: "#5B5548", text: "Naele monte dans sa chambre pour découvrir son nouvel univers.", type: "narration" }
+          ]},
+          { id: 60, img: "images/tomo1/comic/pagina05/panel_12.jpg", lines: [
+            { speaker: "Séverine", color: "#A1527A", text: "Tu es fatiguée, Naele. Madou, montre la chambre à Naele, s'il te plaît.", type: "dialogue" },
+            { speaker: "Madou", color: "#C77D1E", text: "Oui, maman ! Suis-moi !", type: "dialogue" }
+          ]}
+        ]
       }
     ]
   },

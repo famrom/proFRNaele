@@ -119,6 +119,39 @@ function playWhoosh() {
   src.connect(filter); filter.connect(gain); gain.connect(ctx.destination);
   src.start(now); src.stop(now + 0.6);
 }
+function playSip() {
+  const ctx = getAudioCtx(); const now = ctx.currentTime;
+  [0, 0.22].forEach((offset) => {
+    const osc = ctx.createOscillator();
+    osc.type = "sine";
+    osc.frequency.setValueAtTime(420, now + offset);
+    osc.frequency.exponentialRampToValueAtTime(180, now + offset + 0.15);
+    const gain = ctx.createGain();
+    gain.gain.setValueAtTime(0.0001, now + offset);
+    gain.gain.exponentialRampToValueAtTime(0.22, now + offset + 0.03);
+    gain.gain.exponentialRampToValueAtTime(0.0001, now + offset + 0.18);
+    osc.connect(gain); gain.connect(ctx.destination);
+    osc.start(now + offset); osc.stop(now + offset + 0.2);
+  });
+}
+function playClack() {
+  const ctx = getAudioCtx(); const now = ctx.currentTime;
+  const src = ctx.createBufferSource(); src.buffer = noiseBuffer(ctx, 0.12);
+  const filter = ctx.createBiquadFilter(); filter.type = "bandpass"; filter.Q.value = 3; filter.frequency.value = 1800;
+  const gain = ctx.createGain();
+  gain.gain.setValueAtTime(0.4, now);
+  gain.gain.exponentialRampToValueAtTime(0.001, now + 0.1);
+  src.connect(filter); filter.connect(gain); gain.connect(ctx.destination);
+  src.start(now); src.stop(now + 0.12);
+
+  const thump = ctx.createOscillator(); thump.type = "sine";
+  thump.frequency.setValueAtTime(150, now); thump.frequency.exponentialRampToValueAtTime(60, now + 0.1);
+  const thumpGain = ctx.createGain();
+  thumpGain.gain.setValueAtTime(0.3, now);
+  thumpGain.gain.exponentialRampToValueAtTime(0.001, now + 0.12);
+  thump.connect(thumpGain); thumpGain.connect(ctx.destination);
+  thump.start(now); thump.stop(now + 0.13);
+}
 function playSfx(type) {
   if (type === "engine") playEngine();
   else if (type === "thunder") playThunder();
@@ -126,6 +159,8 @@ function playSfx(type) {
   else if (type === "beep") playBeep();
   else if (type === "rustle") playRustle();
   else if (type === "whoosh") playWhoosh();
+  else if (type === "sip") playSip();
+  else if (type === "clack") playClack();
 }
 
 // ---- Speech (dialogue / narration) with punctuation-based prosody ----
