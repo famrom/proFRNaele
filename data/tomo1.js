@@ -48,6 +48,104 @@ const TOMO1 = {
             { speaker: "Narrateur", color: "#5B5548", text: "La famille d'accueil attend Naele à l'aéroport.", type: "narration" }
           ]}
         ]
+      },
+      {
+        page: 2,
+        panels: [
+          { id: 13, img: "images/tomo1/comic/pagina02/panel_01.jpg", lines: [
+            { speaker: "Félix", color: "#2F6F4E", text: "Bonjour ! Tu es Naele ?", type: "dialogue" },
+            { speaker: "Naele", color: "#B23A48", text: "Oui... Bonjour. Je suis Naele.", type: "dialogue" }
+          ]},
+          { id: 14, img: "images/tomo1/comic/pagina02/panel_02.jpg", lines: [
+            { speaker: "Félix", color: "#2F6F4E", text: "Bienvenue en France ! Je suis le père de Madou. Je m'appelle Félix.", type: "dialogue" },
+            { speaker: "Narrateur", color: "#5B5548", text: "Naele utilise ses premières phrases de survie en français.", type: "narration" }
+          ]},
+          { id: 15, img: "images/tomo1/comic/pagina02/panel_03.jpg", lines: [
+            { speaker: "Séverine", color: "#A1527A", text: "Enchantée, Naele ! Je m'appelle Séverine, je suis la mère.", type: "dialogue" },
+            { speaker: "Naele", color: "#B23A48", text: "Enchantée, Séverine,", type: "dialogue" }
+          ]},
+          { id: 16, img: "images/tomo1/comic/pagina02/panel_04.jpg", lines: [
+            { speaker: "Séverine", color: "#A1527A", text: "Nous sommes très heureux ! Tu parles français ?", type: "dialogue" },
+            { speaker: "Naele", color: "#B23A48", text: "Je parle un peu... Je suis fatiguée.", type: "dialogue" }
+          ]},
+          { id: 17, img: "images/tomo1/comic/pagina02/panel_05.jpg", lines: [
+            { speaker: "Félix", color: "#2F6F4E", text: "Pas de problème ! Vous êtes fatiguées, les filles. On y va.", type: "dialogue" },
+            { speaker: "Naele", color: "#B23A48", text: "Merci, Félix.", type: "dialogue" }
+          ]},
+          { id: 18, img: "images/tomo1/comic/pagina02/panel_06.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "C'est impossible... Pourquoi le téléphone affiche '1992' ? Bug de réseau ?", type: "dialogue" },
+            { speaker: "Narrateur", color: "#5B5548", text: "Naele ne comprend pas le problème avec son téléphone.", type: "narration" }
+          ]},
+          { id: 19, img: "images/tomo1/comic/pagina02/panel_07.jpg", lines: [
+            { speaker: "SFX", color: "#8A7B4E", text: "BIP... CLAC.", type: "sfx", sfxType: "beep" },
+            { speaker: "Naele", color: "#B23A48", text: "Oh non ! Plus de batterie ?", type: "dialogue" }
+          ]},
+          { id: 20, img: "images/tomo1/comic/pagina02/panel_08.jpg", lines: [
+            { speaker: "Madou", color: "#C77D1E", text: "Ton sac est super cool ! C'est quelle marque ?", type: "dialogue" },
+            { speaker: "Naele", color: "#B23A48", text: "C'est... une marque espagnole.", type: "dialogue" }
+          ]},
+          { id: 21, img: "images/tomo1/comic/pagina02/panel_09.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Tu as quel âge, Madou ?", type: "dialogue" },
+            { speaker: "Madou", color: "#C77D1E", text: "J'ai 12 ans ! Et toi ?", type: "dialogue" },
+            { speaker: "Naele", color: "#B23A48", text: "J'ai 12 ans aussi.", type: "dialogue" }
+          ]},
+          { id: 22, img: "images/tomo1/comic/pagina02/panel_10.jpg", lines: [
+            { speaker: "Narrateur", color: "#5B5548", text: "Tout semble vieux autour d'elle dans l'aéroport.", type: "narration" }
+          ]},
+          { id: 23, img: "images/tomo1/comic/pagina02/panel_11.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Une vieille publicité ?", type: "dialogue" },
+            { speaker: "Narrateur", color: "#5B5548", text: "Naele pense encore à une mauvaise blague.", type: "narration" }
+          ]},
+          { id: 24, img: "images/tomo1/comic/pagina02/panel_12.jpg", lines: [
+            { speaker: "Félix", color: "#2F6F4E", text: "La voiture est sur le parking. Allez, en route !", type: "dialogue" }
+          ]}
+        ]
+      },
+      {
+        page: 3,
+        panels: [
+          { id: 25, img: "images/tomo1/comic/pagina03/panel_01.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Attendez... un moment, s'il vous plaît.", type: "dialogue" }
+          ]},
+          { id: 26, img: "images/tomo1/comic/pagina03/panel_02.jpg", lines: [
+            { speaker: "Narrateur", color: "#5B5548", text: "Un simple bout de papier va faire basculer sa réalité.", type: "narration" }
+          ]},
+          { id: 27, img: "images/tomo1/comic/pagina03/panel_03.jpg", lines: [
+            { speaker: "SFX", color: "#8A7B4E", text: "FRRRR", type: "sfx", sfxType: "rustle" }
+          ]},
+          { id: 28, img: "images/tomo1/comic/pagina03/panel_04.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Vingt-deux... janvier... mille neuf cent quatre-vingt-douze ?!", type: "dialogue" }
+          ]},
+          { id: 29, img: "images/tomo1/comic/pagina03/panel_05.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Ce n'est pas possible... Je suis partie le 22 janvier 2027 !", type: "dialogue" },
+            { speaker: "Narrateur", color: "#5B5548", text: "Naele découvre une vérité impossible : elle est en 1992.", type: "narration" }
+          ]},
+          { id: 30, img: "images/tomo1/comic/pagina03/panel_06.jpg", lines: [
+            { speaker: "Madou", color: "#C77D1E", text: "Naele ? Ça va ? Tu es toute pâle !", type: "dialogue" },
+            { speaker: "Naele", color: "#B23A48", text: "Le... le journal... Quelle est la date aujourd'hui ?", type: "dialogue" }
+          ]},
+          { id: 31, img: "images/tomo1/comic/pagina03/panel_07.jpg", lines: [
+            { speaker: "Madou", color: "#C77D1E", text: "Bah, le 22 janvier ! C'est l'hiver ! 1992, évidemment !", type: "dialogue" }
+          ]},
+          { id: 32, img: "images/tomo1/comic/pagina03/panel_08.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Non... non, non, non ! C'est un cauchemar ! Je suis dans le passé ?!", type: "dialogue" },
+            { speaker: "SFX", color: "#8A7B4E", text: "FLAP", type: "sfx", sfxType: "whoosh" },
+            { speaker: "Narrateur", color: "#5B5548", text: "Le choc est trop grand. Son esprit refuse d'y croire.", type: "narration" }
+          ]},
+          { id: 33, img: "images/tomo1/comic/pagina03/panel_09.jpg", lines: [
+            { speaker: "Séverine", color: "#A1527A", text: "Oh là là, tu es blanche comme un linge ! Félix, elle fait un malaise !", type: "dialogue" }
+          ]},
+          { id: 34, img: "images/tomo1/comic/pagina03/panel_10.jpg", lines: [
+            { speaker: "Félix", color: "#2F6F4E", text: "Il y a un café juste là. Vite, un sucre pour Naele !", type: "dialogue" },
+            { speaker: "Naele", color: "#B23A48", text: "Je... oui... un verre d'eau...", type: "dialogue" }
+          ]},
+          { id: 35, img: "images/tomo1/comic/pagina03/panel_11.jpg", lines: [
+            { speaker: "Narrateur", color: "#5B5548", text: "La famille d'accueil aide Naele face au choc.", type: "narration" }
+          ]},
+          { id: 36, img: "images/tomo1/comic/pagina03/panel_12.jpg", lines: [
+            { speaker: "Félix", color: "#2F6F4E", text: "Assieds-toi ici. Papa commande une boisson.", type: "dialogue" }
+          ]}
+        ]
       }
     ]
   },

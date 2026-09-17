@@ -80,10 +80,52 @@ function playScreech() {
   src.connect(filter); filter.connect(gain); gain.connect(ctx.destination);
   src.start(now); src.stop(now + 1.0);
 }
+function playBeep() {
+  const ctx = getAudioCtx(); const now = ctx.currentTime;
+  [0, 0.18, 0.42].forEach((offset, i) => {
+    const osc = ctx.createOscillator();
+    osc.type = "square";
+    osc.frequency.value = i < 2 ? 1400 : 300;
+    const gain = ctx.createGain();
+    gain.gain.setValueAtTime(0.0001, now + offset);
+    gain.gain.exponentialRampToValueAtTime(0.18, now + offset + 0.02);
+    gain.gain.exponentialRampToValueAtTime(0.0001, now + offset + (i < 2 ? 0.12 : 0.3));
+    osc.connect(gain); gain.connect(ctx.destination);
+    osc.start(now + offset); osc.stop(now + offset + 0.35);
+  });
+}
+function playRustle() {
+  const ctx = getAudioCtx(); const now = ctx.currentTime;
+  const src = ctx.createBufferSource(); src.buffer = noiseBuffer(ctx, 0.5);
+  const filter = ctx.createBiquadFilter(); filter.type = "highpass"; filter.frequency.value = 2500;
+  const gain = ctx.createGain();
+  gain.gain.setValueAtTime(0.0001, now);
+  gain.gain.exponentialRampToValueAtTime(0.2, now + 0.05);
+  gain.gain.exponentialRampToValueAtTime(0.05, now + 0.25);
+  gain.gain.exponentialRampToValueAtTime(0.0001, now + 0.5);
+  src.connect(filter); filter.connect(gain); gain.connect(ctx.destination);
+  src.start(now); src.stop(now + 0.5);
+}
+function playWhoosh() {
+  const ctx = getAudioCtx(); const now = ctx.currentTime;
+  const src = ctx.createBufferSource(); src.buffer = noiseBuffer(ctx, 0.6);
+  const filter = ctx.createBiquadFilter(); filter.type = "bandpass"; filter.Q.value = 1.2;
+  filter.frequency.setValueAtTime(400, now); filter.frequency.exponentialRampToValueAtTime(1800, now + 0.3);
+  filter.frequency.exponentialRampToValueAtTime(300, now + 0.6);
+  const gain = ctx.createGain();
+  gain.gain.setValueAtTime(0.0001, now);
+  gain.gain.exponentialRampToValueAtTime(0.3, now + 0.15);
+  gain.gain.exponentialRampToValueAtTime(0.0001, now + 0.6);
+  src.connect(filter); filter.connect(gain); gain.connect(ctx.destination);
+  src.start(now); src.stop(now + 0.6);
+}
 function playSfx(type) {
   if (type === "engine") playEngine();
   else if (type === "thunder") playThunder();
   else if (type === "screech") playScreech();
+  else if (type === "beep") playBeep();
+  else if (type === "rustle") playRustle();
+  else if (type === "whoosh") playWhoosh();
 }
 
 // ---- Speech (dialogue / narration) with punctuation-based prosody ----
