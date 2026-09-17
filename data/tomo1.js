@@ -334,6 +334,98 @@ const TOMO1 = {
             { speaker: "Narrateur", color: "#5B5548", text: "Son père ne comprend pas la situation et s'amuse de l'histoire.", type: "narration" }
           ]}
         ]
+      },
+      {
+        page: 8,
+        panels: [
+          { id: 85, img: "images/tomo1/comic/pagina08/panel_01.jpg", lines: [
+            { speaker: "Papa", color: "#8B5E3C", text: "Tu es à Vannes ? La famille est sympa ?", type: "dialogue" },
+            { speaker: "Naele", color: "#B23A48", text: "Oui, ils sont gentils... Mais papa, je suis en 1992 !", type: "dialogue" }
+          ]},
+          { id: 86, img: "images/tomo1/comic/pagina08/panel_02.jpg", lines: [
+            { speaker: "Mamá", color: "#4E7A9E", text: "C'est Naele ? Donne-moi le téléphone !", type: "dialogue" },
+            { speaker: "Narrateur", color: "#5B5548", text: "La mère de Naele prend le téléphone en Espagne.", type: "narration" }
+          ]},
+          { id: 87, img: "images/tomo1/comic/pagina08/panel_03.jpg", lines: [
+            { speaker: "Mamá", color: "#4E7A9E", text: "Allô Naele ! Tu es fatiguée ? Tu manges bien ?", type: "dialogue" }
+          ]},
+          { id: 88, img: "images/tomo1/comic/pagina08/panel_04.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Maman ! S'il te plaît, écoute ! Mon portable ne marche pas !", type: "dialogue" }
+          ]},
+          { id: 89, img: "images/tomo1/comic/pagina08/panel_05.jpg", lines: [
+            { speaker: "Mamá", color: "#4E7A9E", text: "C'est normal, Naele. Le voyage est long. Tu es fatiguée. Repose-toi !", type: "dialogue" },
+            { speaker: "Narrateur", color: "#5B5548", text: "Ses parents pensent que c'est une blague.", type: "narration" }
+          ]},
+          { id: 90, img: "images/tomo1/comic/pagina08/panel_06.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Ce n'est pas une blague ! Je regarde la télévision... C'est le passé !", type: "dialogue" }
+          ]},
+          { id: 91, img: "images/tomo1/comic/pagina08/panel_07.jpg", lines: [
+            { speaker: "Mamá", color: "#4E7A9E", text: "Il est tard, Naele. Demain, tu as le collège. Bonne nuit ! Je t'aime !", type: "dialogue" }
+          ]},
+          { id: 92, img: "images/tomo1/comic/pagina08/panel_08.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Maman ! Non ! Attends !", type: "dialogue" }
+          ]},
+          { id: 93, img: "images/tomo1/comic/pagina08/panel_09.jpg", lines: [
+            { speaker: "SFX", color: "#8A7B4E", text: "BIP... BIP... BIP...", type: "sfx", sfxType: "beep" },
+            { speaker: "Narrateur", color: "#5B5548", text: "La communication s'arrête brutalement à cause de l'heure.", type: "narration" }
+          ]},
+          { id: 94, img: "images/tomo1/comic/pagina08/panel_10.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Ils ne me croient pas... Personne ne me croit.", type: "dialogue" }
+          ]},
+          { id: 95, img: "images/tomo1/comic/pagina08/panel_11.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Attends ! Le téléphone fonctionne avec 2027... J'appelle Margot !", type: "dialogue" },
+            { speaker: "Narrateur", color: "#5B5548", text: "Naele tente une dernière chance avec sa meilleure amie.", type: "narration" }
+          ]},
+          { id: 96, img: "images/tomo1/comic/pagina08/panel_12.jpg", lines: [
+            { speaker: "SFX", color: "#8A7B4E", text: "BIP... BOP... BEEP...", type: "sfx", sfxType: "beep" }
+          ]}
+        ]
+      },
+      {
+        page: 9,
+        panels: [
+          { id: 97, img: "images/tomo1/comic/pagina09/panel_01.jpg", lines: [
+            { speaker: "Margot", color: "#4B3F72", text: "Allô ? Naele ? Tu es en France ?", type: "dialogue" }
+          ]},
+          { id: 98, img: "images/tomo1/comic/pagina09/panel_02.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Margot ! Merci ! Écoute, c'est urgent ! C'est fou !", type: "dialogue" }
+          ]},
+          { id: 99, img: "images/tomo1/comic/pagina09/panel_03.jpg", lines: [
+            { speaker: "Margot", color: "#4B3F72", text: "Calme-toi. Quel est le problème à Vannes ?", type: "dialogue" }
+          ]},
+          { id: 100, img: "images/tomo1/comic/pagina09/panel_04.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Je suis à Vannes, oui. Mais je suis en 1992 ! Les journaux, la télé, les voitures... Tout est de 1992 !", type: "dialogue" },
+            { speaker: "Narrateur", color: "#5B5548", text: "La mente brillante de Margot cherche tout de suite une explication.", type: "narration" }
+          ]},
+          { id: 101, img: "images/tomo1/comic/pagina09/panel_05.jpg", lines: [
+            { speaker: "Margot", color: "#4B3F72", text: "Quoi ?! Un voyage dans le temps ? Mais... comment tu m'appelles ?", type: "dialogue" }
+          ]},
+          { id: 102, img: "images/tomo1/comic/pagina09/panel_06.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Avec le téléphone fixe de la famille ! Ça connecte avec ton mobile !", type: "dialogue" }
+          ]},
+          { id: 103, img: "images/tomo1/comic/pagina09/panel_07.jpg", lines: [
+            { speaker: "Margot", color: "#4B3F72", text: "C'est incroyable ! Une anomalie dans le réseau ! Naele, c'est une super opportunité !", type: "dialogue" },
+            { speaker: "Narrateur", color: "#5B5548", text: "Pour Margot, cette situation impossible est un défi passionnant.", type: "narration" }
+          ]},
+          { id: 104, img: "images/tomo1/comic/pagina09/panel_08.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Une opportunité ?! Je suis seule en 1992 ! Je ne parle pas français !", type: "dialogue" }
+          ]},
+          { id: 105, img: "images/tomo1/comic/pagina09/panel_09.jpg", lines: [
+            { speaker: "Margot", color: "#4B3F72", text: "Tu es forte. Tu es en France pour trois mois. Tu dois apprendre le français ! C'est un mode survie !", type: "dialogue" },
+            { speaker: "Narrateur", color: "#5B5548", text: "Margot pousse son amie à relever le défi de la langue française.", type: "narration" }
+          ]},
+          { id: 106, img: "images/tomo1/comic/pagina09/panel_10.jpg", lines: [
+            { speaker: "Margot", color: "#4B3F72", text: "Vis ta vie là-bas ! Va au collège Jules Simon ! Parle avec Madou ! Apprends la langue !", type: "dialogue" }
+          ]},
+          { id: 107, img: "images/tomo1/comic/pagina09/panel_11.jpg", lines: [
+            { speaker: "Margot", color: "#4B3F72", text: "Moi, en 2027, j'étudie ce mystère. On parle tous les jours !", type: "dialogue" }
+          ]},
+          { id: 108, img: "images/tomo1/comic/pagina09/panel_12.jpg", lines: [
+            { speaker: "Margot", color: "#4B3F72", text: "Parfait ! Bon courage pour le collège ! À bientôt !", type: "dialogue" },
+            { speaker: "Naele", color: "#B23A48", text: "Merci Margot. À bientôt ! CLIC.", type: "dialogue" },
+            { speaker: "Narrateur", color: "#5B5548", text: "Les mots de Margot redonnent confiance à Naele.", type: "narration" }
+          ]}
+        ]
       }
     ]
   },
