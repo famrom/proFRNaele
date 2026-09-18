@@ -426,6 +426,50 @@ const TOMO1 = {
             { speaker: "Narrateur", color: "#5B5548", text: "Les mots de Margot redonnent confiance à Naele.", type: "narration" }
           ]}
         ]
+      },
+      {
+        page: 10,
+        panels: [
+          { id: 109, img: "images/tomo1/comic/pagina10/panel_01.jpg", lines: [
+            { speaker: "SFX", color: "#8A7B4E", text: "CLAC.", type: "sfx", sfxType: "clack" },
+            { speaker: "Narrateur", color: "#5B5548", text: "La conversation est terminée. Le silence revient.", type: "narration" }
+          ]},
+          { id: 110, img: "images/tomo1/comic/pagina10/panel_02.jpg", lines: [
+            { speaker: "Madou", color: "#C77D1E", text: "Naele ? Ça va ? Le dîner est prêt !", type: "dialogue" },
+            { speaker: "Naele", color: "#B23A48", text: "Oui, ça va. Je viens !", type: "dialogue" }
+          ]},
+          { id: 111, img: "images/tomo1/comic/pagina10/panel_03.jpg", lines: [
+            { speaker: "Félix", color: "#2F6F4E", text: "Tu aimes la soupe, Naele ?", type: "dialogue" }
+          ]},
+          { id: 112, img: "images/tomo1/comic/pagina10/panel_04.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Oui, j'aime beaucoup. Merci Félix.", type: "dialogue" },
+            { speaker: "Narrateur", color: "#5B5548", text: "Naele écoute attentivement les mots en français.", type: "narration" }
+          ]},
+          { id: 113, img: "images/tomo1/comic/pagina10/panel_05.jpg", lines: [] },
+          { id: 114, img: "images/tomo1/comic/pagina10/panel_06.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Ils sont gentils. Je suis en sécurité ici.", type: "dialogue" }
+          ]},
+          { id: 115, img: "images/tomo1/comic/pagina10/panel_07.jpg", lines: [
+            { speaker: "Narrateur", color: "#5B5548", text: "La nuit tombe sur la ville de Vannes.", type: "narration" }
+          ]},
+          { id: 116, img: "images/tomo1/comic/pagina10/panel_08.jpg", lines: [
+            { speaker: "Madou", color: "#C77D1E", text: "Bonne nuit, Naele ! À demain !", type: "dialogue" },
+            { speaker: "Naele", color: "#B23A48", text: "Bonne nuit, Madou ! À demain !", type: "dialogue" }
+          ]},
+          { id: 117, img: "images/tomo1/comic/pagina10/panel_09.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Demain... C'est le premier jour au Collège Jules Simon.", type: "dialogue" }
+          ]},
+          { id: 118, img: "images/tomo1/comic/pagina10/panel_10.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "C'est une grande aventure... Je suis prête.", type: "dialogue" },
+            { speaker: "Narrateur", color: "#5B5548", text: "Une incroyable aventure commence pour elle.", type: "narration" }
+          ]},
+          { id: 119, img: "images/tomo1/comic/pagina10/panel_11.jpg", lines: [
+            { speaker: "SFX", color: "#8A7B4E", text: "Zzzzz...", type: "sfx", sfxType: "rustle" }
+          ]},
+          { id: 120, img: "images/tomo1/comic/pagina10/panel_12.jpg", lines: [
+            { speaker: "Narrateur", color: "#5B5548", text: "FIN DU CHAPITRE 1", type: "narration" }
+          ]}
+        ]
       }
     ]
   },
@@ -449,6 +493,61 @@ const TOMO1 = {
       { img: "images/tomo1/characters/madou_04.jpg", lines: [{ speaker: "Madou", color: "#C77D1E", text: "Vannes est en France. Vannes est une ville de Bretagne.", type: "narration" }] }
     ]}
   ],
-  grammar: []
+  grammar: [
+    {
+      id: "grammaire1",
+      title: "Les couleurs de la grammaire 1",
+      img: "images/tomo1/grammar/grammaire01.jpg",
+      sections: [
+        {
+          title: "Les pronoms sujets",
+          items: [
+            { fr: "Je", note: "(Moi)" },
+            { fr: "Tu", note: "(Toi)" },
+            { fr: "Il / Elle", note: "(Lui / Elle)" },
+            { fr: "Nous", note: "(Moi + Toi)" },
+            { fr: "Vous", note: "(Toi + Lui)" },
+            { fr: "Ils / Elles", note: "(Eux / Elles)" }
+          ]
+        },
+        {
+          title: "Le verbe être",
+          items: [
+            { fr: "Je suis" },
+            { fr: "Tu es" },
+            { fr: "Il / Elle est" },
+            { fr: "Nous sommes" },
+            { fr: "Vous êtes" },
+            { fr: "Ils / Elles sont" }
+          ]
+        },
+        {
+          title: "Les verbes en -ER (parler)",
+          items: [
+            { fr: "Je parle" },
+            { fr: "Tu parles" },
+            { fr: "Il / Elle parle" },
+            { fr: "Nous parlons" },
+            { fr: "Vous parlez" },
+            { fr: "Ils / Elles parlent" }
+          ]
+        },
+        {
+          title: "Les phrases clés de survie",
+          items: [
+            { fr: "Comment tu t'appelles ?" },
+            { fr: "Est-ce que tu parles français ?" },
+            { fr: "Quel âge as-tu ?" },
+            { fr: "Ça va ? Oui, ça va." },
+            { fr: "Quelle est la date aujourd'hui ? Aujourd'hui, c'est..." },
+            { fr: "Qu'est-ce que c'est ? C'est..." },
+            { fr: "Bonjour !" },
+            { fr: "Enchanté !" },
+            { fr: "Au revoir !" }
+          ]
+        }
+      ]
+    }
+  ]
 };
 const TOMOS = [TOMO1];

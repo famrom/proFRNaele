@@ -265,7 +265,50 @@ function render() {
 
   if (activeTab === "comic") renderComic();
   else if (activeTab === "characters") renderCharacters();
-  else if (activeTab === "grammar") renderPlaceholderOrList(tomo.grammar, "gramática");
+  else if (activeTab === "grammar") renderGrammar();
+}
+
+function renderGrammar() {
+  const tomo = getTomo();
+  const grammarPages = tomo.grammar || [];
+  const container = document.getElementById("tabPanel");
+  if (grammarPages.length === 0) {
+    container.innerHTML = `<div class="placeholder">Todavía no hay esquema gramatical en este tomo.</div>`;
+    return;
+  }
+  const g = grammarPages[0];
+
+  const sectionsHtml = g.sections.map((section) => {
+    const itemsHtml = section.items.map((item, ii) => {
+      const words = item.fr.split(" ").map((w) =>
+        `<span class="word" data-word="${escapeHtml(w).replace(/"/g, '&quot;')}">${escapeHtml(w)} </span>`
+      ).join("");
+      return `
+        <div class="gram-item">
+          <div class="gram-item-text">${words}${item.note ? `<span class="gram-note">${escapeHtml(item.note)}</span>` : ""}</div>
+          <button class="play-btn" data-gram-speak="${escapeHtml(item.fr).replace(/"/g, '&quot;')}">▶</button>
+        </div>`;
+    }).join("");
+    return `
+      <div class="gram-section">
+        <div class="gram-section-title">${escapeHtml(section.title)}</div>
+        ${itemsHtml}
+      </div>`;
+  }).join("");
+
+  container.innerHTML = `
+    <div class="content">
+      <img src="${g.img}" alt="${escapeHtml(g.title)}" class="gram-poster">
+      ${sectionsHtml}
+    </div>
+  `;
+
+  document.querySelectorAll(".word").forEach(el => {
+    el.addEventListener("click", () => openTranslation(el.dataset.word));
+  });
+  document.querySelectorAll("[data-gram-speak]").forEach(el => {
+    el.addEventListener("click", () => speak(el.dataset.gramSpeak, "Naele"));
+  });
 }
 
 function renderCharacters() {
