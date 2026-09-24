@@ -166,6 +166,32 @@ function playRingtone() {
     osc.start(now + offset); osc.stop(now + offset + 0.4);
   });
 }
+function playBell() {
+  const ctx = getAudioCtx(); const now = ctx.currentTime;
+  [0, 0.22].forEach((offset) => {
+    const osc = ctx.createOscillator(); osc.type = "triangle";
+    osc.frequency.value = 1800;
+    const gain = ctx.createGain();
+    gain.gain.setValueAtTime(0.0001, now + offset);
+    gain.gain.exponentialRampToValueAtTime(0.25, now + offset + 0.01);
+    gain.gain.exponentialRampToValueAtTime(0.0001, now + offset + 0.18);
+    osc.connect(gain); gain.connect(ctx.destination);
+    osc.start(now + offset); osc.stop(now + offset + 0.2);
+  });
+}
+function playYum() {
+  const ctx = getAudioCtx(); const now = ctx.currentTime;
+  [0, 0.13].forEach((offset, i) => {
+    const osc = ctx.createOscillator(); osc.type = "sine";
+    osc.frequency.value = i === 0 ? 500 : 650;
+    const gain = ctx.createGain();
+    gain.gain.setValueAtTime(0.0001, now + offset);
+    gain.gain.exponentialRampToValueAtTime(0.2, now + offset + 0.03);
+    gain.gain.exponentialRampToValueAtTime(0.0001, now + offset + 0.15);
+    osc.connect(gain); gain.connect(ctx.destination);
+    osc.start(now + offset); osc.stop(now + offset + 0.17);
+  });
+}
 function playSfx(type) {
   if (type === "engine") playEngine();
   else if (type === "thunder") playThunder();
@@ -176,6 +202,8 @@ function playSfx(type) {
   else if (type === "sip") playSip();
   else if (type === "clack") playClack();
   else if (type === "ringtone") playRingtone();
+  else if (type === "bell") playBell();
+  else if (type === "yum") playYum();
 }
 
 // ---- Speech (dialogue / narration) with punctuation-based prosody ----

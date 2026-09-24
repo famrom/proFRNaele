@@ -556,4 +556,3 @@ const TOMO1 = {
     }
   ]
 };
-const TOMOS = [TOMO1];
