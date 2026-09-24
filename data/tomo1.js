@@ -4,6 +4,12 @@ const TOMO1 = {
   comic: {
     pages: [
       {
+        page: 0,
+        panels: [
+          { id: "cover", img: "images/tomo1/cover/portada.jpg", isCover: true, lines: [] }
+        ]
+      },
+      {
         page: 1,
         panels: [
           { id: 1, img: "images/tomo1/comic/pagina01/panel_01.jpg", lines: [

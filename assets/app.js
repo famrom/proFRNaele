@@ -247,6 +247,7 @@ function render() {
           ${TOMOS.map((t, i) => `<option value="${i}" ${i === tomoIndex ? "selected" : ""}>${escapeHtml(t.title)}</option>`).join("")}
         </select>
       </div>
+      <a class="external-link" href="https://famrom.github.io/frances-basico/" target="_blank" rel="noopener">📘 Francés básico (verbos y números) ↗</a>
     </div>
     <div class="tabs">
       <button class="tab-btn ${activeTab === "characters" ? "active" : ""}" data-tab="characters">Personajes</button>
@@ -442,7 +443,7 @@ function renderComic() {
 
   container.innerHTML = `
     <div class="topbar">
-      <div class="sub">Vignette ${current + 1} / ${panels.length}</div>
+      <div class="sub">${panel.isCover ? "Portada" : "Vignette " + current + " / " + (panels.length - 1)}</div>
       <div class="dots">${dots}</div>
     </div>
     <div class="panel-wrap" id="panelWrap">
@@ -452,6 +453,7 @@ function renderComic() {
       <div class="nav-btn left ${current === 0 ? "hidden" : ""}" id="prevBtn">‹</div>
       <div class="nav-btn right ${current === panels.length - 1 ? "hidden" : ""}" id="nextBtn">›</div>
     </div>
+    ${panel.isCover ? `<div class="cover-hint">Desliza o toca › para empezar a leer</div>` : `
     <div class="content">
       <div class="hint-row">
         <div class="hint">Toca una palabra para traducirla</div>
@@ -469,7 +471,7 @@ function renderComic() {
           <textarea id="noteText" placeholder="Escribe aquí lo que quieras recordar de esta viñeta...">${escapeHtml(note)}</textarea>
           <div class="save-status" id="saveStatus"></div>
         </div>` : ""}
-    </div>
+    </div>`}
   `;
 
   document.querySelectorAll("[data-goto]").forEach(el => {
