@@ -179,6 +179,22 @@ function playBell() {
     osc.start(now + offset); osc.stop(now + offset + 0.2);
   });
 }
+function playDongDong() {
+  const ctx = getAudioCtx(); const now = ctx.currentTime;
+  [0, 0.6].forEach((offset) => {
+    const osc = ctx.createOscillator(); osc.type = "sine";
+    osc.frequency.value = 300;
+    const osc2 = ctx.createOscillator(); osc2.type = "sine";
+    osc2.frequency.value = 450;
+    const gain = ctx.createGain();
+    gain.gain.setValueAtTime(0.0001, now + offset);
+    gain.gain.exponentialRampToValueAtTime(0.3, now + offset + 0.02);
+    gain.gain.exponentialRampToValueAtTime(0.0001, now + offset + 0.55);
+    osc.connect(gain); osc2.connect(gain); gain.connect(ctx.destination);
+    osc.start(now + offset); osc2.start(now + offset);
+    osc.stop(now + offset + 0.55); osc2.stop(now + offset + 0.55);
+  });
+}
 function playSchoolBell() {
   const ctx = getAudioCtx(); const now = ctx.currentTime;
   const osc = ctx.createOscillator(); osc.type = "square";
@@ -221,6 +237,7 @@ function playSfx(type) {
   else if (type === "ringtone") playRingtone();
   else if (type === "bell") playBell();
   else if (type === "schoolbell") playSchoolBell();
+  else if (type === "dongdong") playDongDong();
   else if (type === "yum") playYum();
 }
 

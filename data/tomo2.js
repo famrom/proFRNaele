@@ -218,6 +218,93 @@ const TOMO2 = {
             { speaker: "Narrateur", color: "#5B5548", text: "Naele compte vingt-cinq (25) personnes dans sa classe.", type: "narration" }
           ]}
         ]
+      },
+      {
+        page: 6,
+        panels: [
+          { id: 61, img: "images/tomo2/comic/pagina06/panel_01.jpg", lines: [
+            { speaker: "Narrateur", color: "#5B5548", text: "Naele s'assoit à côté de Madou sur une chaise en bois.", type: "narration" }
+          ]},
+          { id: 62, img: "images/tomo2/comic/pagina06/panel_02.jpg", lines: [
+            { speaker: "Professeur", color: "#6B4F2A", text: "Bonjour la classe ! Asseyez-vous, s'il vous plaît.", type: "dialogue" }
+          ]},
+          { id: 63, img: "images/tomo2/comic/pagina06/panel_03.jpg", lines: [
+            { speaker: "SFX", color: "#8A7B4E", text: "FRRRR...", type: "sfx", sfxType: "rustle" },
+            { speaker: "Professeur", color: "#6B4F2A", text: "Prenez un cahier et un stylo pour la leçon de français.", type: "dialogue" }
+          ]},
+          { id: 64, img: "images/tomo2/comic/pagina06/panel_04.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Un cahier... un stylo... D'accord.", type: "dialogue" }
+          ]},
+          { id: 65, img: "images/tomo2/comic/pagina06/panel_05.jpg", lines: [
+            { speaker: "Professeur", color: "#6B4F2A", text: "...La grammaire française est importante pour l'analyse des textes littéraires...", type: "dialogue" }
+          ]},
+          { id: 66, img: "images/tomo2/comic/pagina06/panel_06.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Quoi ?! Il parle trop vite ! C'est difficile !", type: "dialogue" }
+          ]},
+          { id: 67, img: "images/tomo2/comic/pagina06/panel_07.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Je ne comprends pas... Je ne comprends pas le professeur.", type: "dialogue" },
+            { speaker: "Narrateur", color: "#5B5548", text: "La langue française est un grand mystère pour Naele.", type: "narration" }
+          ]},
+          { id: 68, img: "images/tomo2/comic/pagina06/panel_08.jpg", lines: [
+            { speaker: "Madou", color: "#C77D1E", text: "Naele ? Ça va ? Écris la date sur le cahier.", type: "dialogue" }
+          ]},
+          { id: 69, img: "images/tomo2/comic/pagina06/panel_09.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Madou... Je ne comprends pas la leçon. Je suis perdue.", type: "dialogue" }
+          ]},
+          { id: 70, img: "images/tomo2/comic/pagina06/panel_10.jpg", lines: [
+            { speaker: "Madou", color: "#C77D1E", text: "Ne t'inquiète pas, Naele. J'explique la leçon après la classe !", type: "dialogue" },
+            { speaker: "Narrateur", color: "#5B5548", text: "Madou aide son amie espagnole pendant le cours difficile.", type: "narration" }
+          ]},
+          { id: 71, img: "images/tomo2/comic/pagina06/panel_11.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Merci, Madou. Étape par étape. Je regarde et j'écoute.", type: "dialogue" }
+          ]},
+          { id: 72, img: "images/tomo2/comic/pagina06/panel_12.jpg", lines: [
+            { speaker: "Narrateur", color: "#5B5548", text: "Naele commence sa première heure d'immersion totale.", type: "narration" }
+          ]}
+        ]
+      },
+      {
+        page: 7,
+        panels: [
+          { id: 73, img: "images/tomo2/comic/pagina07/panel_01.jpg", lines: [
+            { speaker: "SFX", color: "#8A7B4E", text: "DONG-DONG !", type: "sfx", sfxType: "dongdong" },
+            { speaker: "Narrateur", color: "#5B5548", text: "À midi, les six (6) amis vont ensemble à la cantine du collège.", type: "narration" }
+          ]},
+          { id: 74, img: "images/tomo2/comic/pagina07/panel_02.jpg", lines: [
+            { speaker: "Madou", color: "#C77D1E", text: "Il y a quatre (4) réfectoires ici, Naele. C'est très grand !", type: "dialogue" }
+          ]},
+          { id: 75, img: "images/tomo2/comic/pagina07/panel_03.jpg", lines: [
+            { speaker: "Céline", color: "#1E88A8", text: "Le premier réfectoire a seulement trente (30) places.", type: "dialogue" }
+          ]},
+          { id: 76, img: "images/tomo2/comic/pagina07/panel_04.jpg", lines: [
+            { speaker: "Laetitia", color: "#8E5B9E", text: "Regarde, le deuxième réfectoire a quatre-vingts (80) places !", type: "dialogue" }
+          ]},
+          { id: 77, img: "images/tomo2/comic/pagina07/panel_05.jpg", lines: [
+            { speaker: "Sabrina", color: "#B5541F", text: "Et ce grand réfectoire a exactement quatre-vingt-dix-neuf (99) places !", type: "dialogue" }
+          ]},
+          { id: 78, img: "images/tomo2/comic/pagina07/panel_06.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Quatre-vingt-dix-neuf (99)... C'est un numéro très long !", type: "dialogue" }
+          ]},
+          { id: 79, img: "images/tomo2/comic/pagina07/panel_07.jpg", lines: [
+            { speaker: "Narrateur", color: "#5B5548", text: "Les élèves prennent une table dans le grand réfectoire.", type: "narration" }
+          ]},
+          { id: 80, img: "images/tomo2/comic/pagina07/panel_08.jpg", lines: [
+            { speaker: "Sebas", color: "#4A5568", text: "Naele, tu aimes la nourriture de la cantine ? C'est bon ?", type: "dialogue" }
+          ]},
+          { id: 81, img: "images/tomo2/comic/pagina07/panel_09.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Oui, j'aime le poulet et le pain. C'est délicieux !", type: "dialogue" }
+          ]},
+          { id: 82, img: "images/tomo2/comic/pagina07/panel_10.jpg", lines: [
+            { speaker: "Madou", color: "#C77D1E", text: "La cantine de Jules Simon est célèbre ! Nous avons de la chance.", type: "dialogue" }
+          ]},
+          { id: 83, img: "images/tomo2/comic/pagina07/panel_11.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Il y a beaucoup d'enfants... Plus de cent (100) personnes ici.", type: "dialogue" },
+            { speaker: "Narrateur", color: "#5B5548", text: "Naele apprend les grands nombres en comptant les élèves.", type: "narration" }
+          ]},
+          { id: 84, img: "images/tomo2/comic/pagina07/panel_12.jpg", lines: [
+            { speaker: "Madou", color: "#C77D1E", text: "Allez, on y va ! C'est l'heure de la gymnastique !", type: "dialogue" }
+          ]}
+        ]
       }
     ]
   },
