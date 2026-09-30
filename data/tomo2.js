@@ -305,6 +305,94 @@ const TOMO2 = {
             { speaker: "Madou", color: "#C77D1E", text: "Allez, on y va ! C'est l'heure de la gymnastique !", type: "dialogue" }
           ]}
         ]
+      },
+      {
+        page: 8,
+        panels: [
+          { id: 85, img: "images/tomo2/comic/pagina08/panel_01.jpg", lines: [
+            { speaker: "Narrateur", color: "#5B5548", text: "Les élèves marchent vers le gymnase pour le cours de sport.", type: "narration" }
+          ]},
+          { id: 86, img: "images/tomo2/comic/pagina08/panel_02.jpg", lines: [
+            { speaker: "Narrateur", color: "#5B5548", text: "Il y a une note officielle sur la porte du gymnase.", type: "narration" }
+          ]},
+          { id: 87, img: "images/tomo2/comic/pagina08/panel_03.jpg", lines: [
+            { speaker: "Sebas", color: "#4A5568", text: "Attention ! Le cours de gymnastique est annulé aujourd'hui !", type: "dialogue" }
+          ]},
+          { id: 88, img: "images/tomo2/comic/pagina08/panel_04.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Madou ? Qu'est-ce que c'est ? Je ne comprends pas.", type: "dialogue" }
+          ]},
+          { id: 89, img: "images/tomo2/comic/pagina08/panel_05.jpg", lines: [
+            { speaker: "Madou", color: "#C77D1E", text: "Nous n'avons pas cours, Naele ! La prof de gym n'est pas là.", type: "dialogue" }
+          ]},
+          { id: 90, img: "images/tomo2/comic/pagina08/panel_06.jpg", lines: [
+            { speaker: "Céline", color: "#1E88A8", text: "Oui, la professeure est malade. Elle ne travaille pas aujourd'hui.", type: "dialogue" }
+          ]},
+          { id: 91, img: "images/tomo2/comic/pagina08/panel_07.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Ne... pas... C'est la négation en français !", type: "dialogue" },
+            { speaker: "Narrateur", color: "#5B5548", text: "Naele comprend la règle de la négation de façon photographique.", type: "narration" }
+          ]},
+          { id: 92, img: "images/tomo2/comic/pagina08/panel_08.jpg", lines: [
+            { speaker: "Sabrina", color: "#B5541F", text: "Super ! Nous ne faisons pas de sport aujourd'hui !", type: "dialogue" },
+            { speaker: "Laetitia", color: "#8E5B9E", text: "Oui ! Nous sommes libres à quinze (15) heures !", type: "dialogue" }
+          ]},
+          { id: 93, img: "images/tomo2/comic/pagina08/panel_09.jpg", lines: [
+            { speaker: "Sebas", color: "#4A5568", text: "Si nous n'avons pas cours... on va à la boulangerie ?", type: "dialogue" }
+          ]},
+          { id: 94, img: "images/tomo2/comic/pagina08/panel_10.jpg", lines: [
+            { speaker: "Madou", color: "#C77D1E", text: "Oui ! Excellente idée, Sebas !", type: "dialogue" }
+          ]},
+          { id: 95, img: "images/tomo2/comic/pagina08/panel_11.jpg", lines: [
+            { speaker: "Madou", color: "#C77D1E", text: "Naele, tu vas découvrir la meilleure boulangerie de Vannes !", type: "dialogue" }
+          ]},
+          { id: 96, img: "images/tomo2/comic/pagina08/panel_12.jpg", lines: [
+            { speaker: "Narrateur", color: "#5B5548", text: "Les six (6) amis quittent le collège plus tôt que prévu.", type: "narration" }
+          ]}
+        ]
+      },
+      {
+        page: 9,
+        panels: [
+          { id: 97, img: "images/tomo2/comic/pagina09/panel_01.jpg", lines: [
+            { speaker: "Narrateur", color: "#5B5548", text: "Le groupe s'arrête devant une jolie boulangerie artisanale.", type: "narration" }
+          ]},
+          { id: 98, img: "images/tomo2/comic/pagina09/panel_02.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Mmm... L'odeur est incroyable. Ça sent très bon !", type: "dialogue" }
+          ]},
+          { id: 99, img: "images/tomo2/comic/pagina09/panel_03.jpg", lines: [
+            { speaker: "Sebas", color: "#4A5568", text: "Bonjour madame ! Six (6) croissants chauds, s'il vous plaît !", type: "dialogue" }
+          ]},
+          { id: 100, img: "images/tomo2/comic/pagina09/panel_04.jpg", lines: [
+            { speaker: "Boulangère", color: "#8B5E3C", text: "Voilà ! Six (6) croissants magnifiques pour vous !", type: "dialogue" }
+          ]},
+          { id: 101, img: "images/tomo2/comic/pagina09/panel_05.jpg", lines: [
+            { speaker: "Narrateur", color: "#5B5548", text: "Chaque élève reçoit un croissant chaud et croustillant.", type: "narration" }
+          ]},
+          { id: 102, img: "images/tomo2/comic/pagina09/panel_06.jpg", lines: [
+            { speaker: "SFX", color: "#8A7B4E", text: "CRUNCH !", type: "sfx", sfxType: "crunch" }
+          ]},
+          { id: 103, img: "images/tomo2/comic/pagina09/panel_07.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Oh mon Dieu... Le croissant est magnifique ! C'est délicieux !", type: "dialogue" },
+            { speaker: "Narrateur", color: "#5B5548", text: "Naele comprend la règle de la négation de façon photographique.", type: "narration" }
+          ]},
+          { id: 104, img: "images/tomo2/comic/pagina09/panel_08.jpg", lines: [
+            { speaker: "Madou", color: "#C77D1E", text: "Hahaha ! Tu aimes le vrai croissant français, Naele ?", type: "dialogue" }
+          ]},
+          { id: 105, img: "images/tomo2/comic/pagina09/panel_09.jpg", lines: [
+            { speaker: "Céline", color: "#1E88A8", text: "Le croissant de cette boulangerie est parfait.", type: "dialogue" },
+            { speaker: "Laetitia", color: "#8E5B9E", text: "Oui, c'est un excellent choix de Sébastien !", type: "dialogue" }
+          ]},
+          { id: 106, img: "images/tomo2/comic/pagina09/panel_10.jpg", lines: [
+            { speaker: "Madou", color: "#C77D1E", text: "C'est l'heure de rentrer. À demain au collège, Naele !", type: "dialogue" },
+            { speaker: "Naele", color: "#B23A48", text: "À demain, les amis ! Merci beaucoup !", type: "dialogue" }
+          ]},
+          { id: 107, img: "images/tomo2/comic/pagina09/panel_11.jpg", lines: [
+            { speaker: "Narrateur", color: "#5B5548", text: "Madou et Naele rentrent à la maison en bicyclette.", type: "narration" }
+          ]},
+          { id: 108, img: "images/tomo2/comic/pagina09/panel_12.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "J'ai de bons amis. La nourriture est super. Je peux survivre en mille neuf cent quatre-vingt-douze (1992).", type: "dialogue" },
+            { speaker: "Narrateur", color: "#5B5548", text: "Naele se sent heureuse et courageuse après cette belle journée.", type: "narration" }
+          ]}
+        ]
       }
     ]
   },

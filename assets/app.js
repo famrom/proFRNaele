@@ -179,6 +179,19 @@ function playBell() {
     osc.start(now + offset); osc.stop(now + offset + 0.2);
   });
 }
+function playCrunch() {
+  const ctx = getAudioCtx(); const now = ctx.currentTime;
+  for (let i = 0; i < 4; i++) {
+    const offset = i * 0.06;
+    const src = ctx.createBufferSource(); src.buffer = noiseBuffer(ctx, 0.06);
+    const filter = ctx.createBiquadFilter(); filter.type = "highpass"; filter.frequency.value = 2000 + i * 300;
+    const gain = ctx.createGain();
+    gain.gain.setValueAtTime(0.3, now + offset);
+    gain.gain.exponentialRampToValueAtTime(0.001, now + offset + 0.05);
+    src.connect(filter); filter.connect(gain); gain.connect(ctx.destination);
+    src.start(now + offset); src.stop(now + offset + 0.06);
+  }
+}
 function playDongDong() {
   const ctx = getAudioCtx(); const now = ctx.currentTime;
   [0, 0.6].forEach((offset) => {
@@ -238,6 +251,7 @@ function playSfx(type) {
   else if (type === "bell") playBell();
   else if (type === "schoolbell") playSchoolBell();
   else if (type === "dongdong") playDongDong();
+  else if (type === "crunch") playCrunch();
   else if (type === "yum") playYum();
 }
 
