@@ -393,6 +393,51 @@ const TOMO2 = {
             { speaker: "Narrateur", color: "#5B5548", text: "Naele se sent heureuse et courageuse après cette belle journée.", type: "narration" }
           ]}
         ]
+      },
+      {
+        page: 10,
+        panels: [
+          { id: 109, img: "images/tomo2/comic/pagina10/panel_01.jpg", lines: [
+            { speaker: "Narrateur", color: "#5B5548", text: "Le soir, Naele utilise le téléphone sans fil de la maison.", type: "narration" }
+          ]},
+          { id: 110, img: "images/tomo2/comic/pagina10/panel_02.jpg", lines: [
+            { speaker: "SFX", color: "#8A7B4E", text: "BIP... BOP... BEEP...", type: "sfx", sfxType: "beep" }
+          ]},
+          { id: 111, img: "images/tomo2/comic/pagina10/panel_03.jpg", lines: [
+            { speaker: "Margot", color: "#4B3F72", text: "Allô Naele ? Tu as passé une bonne journée au collège ?", type: "dialogue" }
+          ]},
+          { id: 112, img: "images/tomo2/comic/pagina10/panel_04.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Oui ! J'ai quatre (4) nouvelles amies et un (1) ami ! Ils sont super !", type: "dialogue" },
+            { speaker: "Narrateur", color: "#5B5548", text: "Naele raconte sa belle journée et utilise le verbe Avoir.", type: "narration" }
+          ]},
+          { id: 113, img: "images/tomo2/comic/pagina10/panel_05.jpg", lines: [
+            { speaker: "Margot", color: "#4B3F72", text: "C'est parfait pour ton français ! Mais écoute... j'ai une théorie sur le téléphone.", type: "dialogue" }
+          ]},
+          { id: 114, img: "images/tomo2/comic/pagina10/panel_06.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Une théorie ? Qu'est-ce que c'est ?", type: "dialogue" }
+          ]},
+          { id: 115, img: "images/tomo2/comic/pagina10/panel_07.jpg", lines: [
+            { speaker: "Margot", color: "#4B3F72", text: "J'étudie l'année mille neuf cent quatre-vingt-douze (1992). Ce n'est pas un accident aléatoire !", type: "dialogue" },
+            { speaker: "Narrateur", color: "#5B5548", text: "Margot analyse le mystère du temps depuis le futur.", type: "narration" }
+          ]},
+          { id: 116, img: "images/tomo2/comic/pagina10/panel_08.jpg", lines: [
+            { speaker: "Margot", color: "#4B3F72", text: "Je ne peux pas expliquer maintenant, c'est trop complexe. Tu dois être très forte, Naele.", type: "dialogue" }
+          ]},
+          { id: 117, img: "images/tomo2/comic/pagina10/panel_09.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Oui, je suis forte, Margot. Je n'ai pas peur. J'attends tes informations.", type: "dialogue" }
+          ]},
+          { id: 118, img: "images/tomo2/comic/pagina10/panel_10.jpg", lines: [
+            { speaker: "Margot", color: "#4B3F72", text: "Bonne nuit, Naele ! À demain !", type: "dialogue" },
+            { speaker: "Naele", color: "#B23A48", text: "Bonne nuit, Margot ! À demain !", type: "dialogue" },
+            { speaker: "SFX", color: "#8A7B4E", text: "CLIC.", type: "sfx", sfxType: "clack" }
+          ]},
+          { id: 119, img: "images/tomo2/comic/pagina10/panel_11.jpg", lines: [
+            { speaker: "Narrateur", color: "#5B5548", text: "Naele est très fatiguée après cette longue journée.", type: "narration" }
+          ]},
+          { id: 120, img: "images/tomo2/comic/pagina10/panel_12.jpg", lines: [
+            { speaker: "Narrateur", color: "#5B5548", text: "FIN DU CHAPITRE 2", type: "narration" }
+          ]}
+        ]
       }
     ]
   },
