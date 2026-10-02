@@ -1,8 +1,14 @@
 const TOMO2 = {
   id: "tomo2",
-  title: "Tomo 2 — Naele",
+  title: "Tomo 2 — Le Premier Jour de Classe",
   comic: {
     pages: [
+      {
+        page: 0,
+        panels: [
+          { id: "cover", img: "images/tomo2/cover/portada.jpg", isCover: true, lines: [] }
+        ]
+      },
       {
         page: 1,
         panels: [
