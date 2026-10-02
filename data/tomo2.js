@@ -448,5 +448,61 @@ const TOMO2 = {
     ]
   },
   characters: [],
-  grammar: []
+  grammar: [
+    {
+      id: "grammaire2",
+      title: "Les couleurs de la grammaire 2",
+      img: "images/tomo2/grammar/grammaire02.jpg",
+      sections: [
+        {
+          title: "Le verbe Avoir",
+          items: [
+            { fr: "J'ai", note: "(J'ai 12 ans)" },
+            { fr: "Tu as", note: "(Tu as un vélo)" },
+            { fr: "Il / Elle a", note: "(Elle a faim)" },
+            { fr: "Nous avons", note: "(Nous avons le même âge)" },
+            { fr: "Vous avez", note: "(Vous avez une liste ?)" },
+            { fr: "Ils / Elles ont", note: "(Elles ont 12 ans)" }
+          ]
+        },
+        {
+          title: "Règle : Ne + verbe + pas",
+          items: [
+            { fr: "Je comprends → Je ne comprends pas" },
+            { fr: "J'ai cours → Je n'ai pas cours" },
+            { fr: "Elle travaille → Elle ne travaille pas aujourd'hui" }
+          ]
+        },
+        {
+          title: "Les nombres de 1 à 100",
+          items: [
+            { fr: "Un", note: "(1)" },
+            { fr: "Deux", note: "(2)" },
+            { fr: "Trois", note: "(3)" },
+            { fr: "Quatre", note: "(4)" },
+            { fr: "Six", note: "(6)" },
+            { fr: "Douze", note: "(12)" },
+            { fr: "Treize", note: "(13)" },
+            { fr: "Vingt-cinq", note: "(25)" },
+            { fr: "Trente", note: "(30)" },
+            { fr: "Quatre-vingts", note: "(80)" },
+            { fr: "Quatre-vingt-dix-neuf", note: "(99)" },
+            { fr: "Cent", note: "(100)" }
+          ]
+        },
+        {
+          title: "Phrases de survie en classe et en ville",
+          items: [
+            { fr: "C'est tout droit !", note: "(Directions)" },
+            { fr: "On tourne à gauche ! / à droite !", note: "(Rue)" },
+            { fr: "Un cahier et un stylo", note: "(Le collège)" },
+            { fr: "Je ne comprends pas", note: "(Aide)" },
+            { fr: "Nous n'avons pas cours", note: "(Négation)" },
+            { fr: "S'il vous plaît !", note: "(Politesse)" },
+            { fr: "C'est délicieux !", note: "(Boulangerie)" }
+          ]
+        }
+      ]
+    }
+  ]
 };
