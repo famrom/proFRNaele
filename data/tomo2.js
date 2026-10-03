@@ -447,7 +447,20 @@ const TOMO2 = {
       }
     ]
   },
-  characters: [],
+  characters: [
+    { id: "celine", name: "Céline", color: "#1E88A8", panels: [
+      { img: "images/tomo2/characters/celine.jpg", lines: [{ speaker: "Céline", color: "#1E88A8", text: "Je m'appelle Céline. J'aime écouter mon Walkman !", type: "narration" }] }
+    ]},
+    { id: "laetitia", name: "Laetitia", color: "#8E5B9E", panels: [
+      { img: "images/tomo2/characters/laetitia.jpg", lines: [{ speaker: "Laetitia", color: "#8E5B9E", text: "Je m'appelle Laetitia. J'aime beaucoup la mode !", type: "narration" }] }
+    ]},
+    { id: "sabrina", name: "Sabrina", color: "#B5541F", panels: [
+      { img: "images/tomo2/characters/sabrina.jpg", lines: [{ speaker: "Sabrina", color: "#B5541F", text: "Je m'appelle Sabrina. J'aime les films d'aventures !", type: "narration" }] }
+    ]},
+    { id: "sebas", name: "Sebas", color: "#4A5568", panels: [
+      { img: "images/tomo2/characters/sebas.jpg", lines: [{ speaker: "Sebas", color: "#4A5568", text: "Je m'appelle Sebas. J'adore le rock et les groupes de musique actuels !", type: "narration" }] }
+    ]}
+  ],
   grammar: [
     {
       id: "grammaire2",
