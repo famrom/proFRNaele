@@ -1,5 +1,17 @@
 // ---- Global state ----
 let tomoIndex = 0;
+const TOMO_PASSWORDS = { tomo3: "naele2027" };
+function getUnlockedTomos() {
+  try { return JSON.parse(localStorage.getItem("unlocked_tomos") || "[]"); }
+  catch (e) { return []; }
+}
+function unlockTomo(id) {
+  const list = getUnlockedTomos();
+  if (!list.includes(id)) { list.push(id); localStorage.setItem("unlocked_tomos", JSON.stringify(list)); }
+}
+function isTomoLocked(tomo) {
+  return !!tomo.locked && !getUnlockedTomos().includes(tomo.id);
+}
 let activeTab = "comic"; // "characters" | "comic" | "grammar"
 let current = 0; // panel index within flattened comic panels
 let charIndex = 0; // which character selected
@@ -315,28 +327,33 @@ function escapeHtml(s) {
 function render() {
   const app = document.getElementById("app");
   const tomo = getTomo();
+  const locked = isTomoLocked(tomo);
 
   app.innerHTML = `
     <div class="header">
       <div class="brand">
-        <span>NAELE — ${escapeHtml(tomo.title)}</span>
+        <span>NAELE — ${escapeHtml(tomo.title)}${locked ? " 🔒" : ""}</span>
         <select class="tomo-select" id="tomoSelect">
-          ${TOMOS.map((t, i) => `<option value="${i}" ${i === tomoIndex ? "selected" : ""}>${escapeHtml(t.title)}</option>`).join("")}
+          ${TOMOS.map((t, i) => `<option value="${i}" ${i === tomoIndex ? "selected" : ""}>${escapeHtml(t.title)}${t.locked ? " 🔒" : ""}</option>`).join("")}
         </select>
       </div>
       <a class="external-link" href="https://famrom.github.io/frances-basico/" target="_blank" rel="noopener">📘 Francés básico (verbos y números) ↗</a>
     </div>
+    ${locked ? `<div id="tabPanel"></div>` : `
     <div class="tabs">
       <button class="tab-btn ${activeTab === "characters" ? "active" : ""}" data-tab="characters">Personajes</button>
       <button class="tab-btn ${activeTab === "comic" ? "active" : ""}" data-tab="comic">Cómic</button>
       <button class="tab-btn ${activeTab === "grammar" ? "active" : ""}" data-tab="grammar">Gramática</button>
     </div>
-    <div class="tab-panel" id="tabPanel"></div>
+    <div class="tab-panel" id="tabPanel"></div>`}
   `;
 
   document.getElementById("tomoSelect").addEventListener("change", (e) => {
     tomoIndex = parseInt(e.target.value); current = 0; render();
   });
+
+  if (locked) { renderLockScreen(tomo); return; }
+
   document.querySelectorAll(".tab-btn").forEach(btn => {
     btn.addEventListener("click", () => { activeTab = btn.dataset.tab; current = 0; noteOpen = false; render(); });
   });
@@ -344,6 +361,33 @@ function render() {
   if (activeTab === "comic") renderComic();
   else if (activeTab === "characters") renderCharacters();
   else if (activeTab === "grammar") renderGrammar();
+}
+
+function renderLockScreen(tomo) {
+  const container = document.getElementById("tabPanel");
+  container.innerHTML = `
+    <div class="lock-screen">
+      <div class="lock-icon">🔒</div>
+      <div class="lock-title">${escapeHtml(tomo.title)}</div>
+      <div class="lock-sub">Este tomo todavía se está preparando.<br>Introduce la contraseña para verlo.</div>
+      <input type="password" id="lockInput" class="lock-input" placeholder="Contraseña">
+      <button class="lock-btn" id="lockBtn">Entrar</button>
+      <div class="lock-error" id="lockError"></div>
+    </div>
+  `;
+  const tryUnlock = () => {
+    const val = document.getElementById("lockInput").value;
+    if (val === TOMO_PASSWORDS[tomo.id]) {
+      unlockTomo(tomo.id);
+      render();
+    } else {
+      document.getElementById("lockError").textContent = "Contraseña incorrecta.";
+    }
+  };
+  document.getElementById("lockBtn").addEventListener("click", tryUnlock);
+  document.getElementById("lockInput").addEventListener("keydown", (e) => {
+    if (e.key === "Enter") tryUnlock();
+  });
 }
 
 function renderGrammar() {

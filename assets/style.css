@@ -75,3 +75,15 @@ html, body { margin: 0; padding: 0; background: var(--paper); font-family: Georg
 textarea { width: 100%; min-height: 70px; border: 1px solid var(--paper-dark); background: #fff; border-radius: 6px; padding: 8px; font-size: 13px; font-family: inherit; color: var(--ink); resize: vertical; }
 .save-status { font-size: 10px; opacity: 0.5; margin-top: 2px; height: 12px; }
 .footer-pad { padding: 4px 16px 24px; }
+
+/* ---- Lock screen ---- */
+.lock-screen { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 60px 24px; }
+.lock-icon { font-size: 40px; margin-bottom: 12px; }
+.lock-title { font-size: 16px; font-weight: 700; margin-bottom: 8px; }
+.lock-sub { font-size: 13px; color: var(--ink); opacity: 0.6; margin-bottom: 20px; line-height: 1.5; }
+.lock-input { width: 100%; max-width: 240px; padding: 10px 14px; border-radius: 8px; border: 1px solid var(--paper-dark);
+  background: #fff; font-size: 14px; font-family: inherit; text-align: center; margin-bottom: 10px; }
+.lock-input:focus { outline: 2px solid var(--accent2); outline-offset: -1px; }
+.lock-btn { padding: 10px 24px; border-radius: 999px; border: none; background: var(--accent); color: #fff;
+  font-size: 13px; font-weight: 600; cursor: pointer; }
+.lock-error { font-size: 12px; color: var(--accent); margin-top: 10px; min-height: 16px; }
