@@ -139,6 +139,97 @@ const TOMO3 = {
             { speaker: "Minimargot", color: "#A78BFA", text: "Les deux filles finissent les classes à seize (16) heures.", type: "narration" }
           ]}
         ]
+      },
+      {
+        page: 4,
+        panels: [
+          { id: 37, img: "images/tomo3/comic/pagina04/panel_01.jpg", lines: [
+            { speaker: "Minimargot", color: "#A78BFA", text: "Elles descendent de l'autobus sous la pluie.", type: "narration" }
+          ]},
+          { id: 38, img: "images/tomo3/comic/pagina04/panel_02.jpg", lines: [
+            { speaker: "Séverine", color: "#A1527A", text: "Bonjour les filles ! Vous vous lavez les mains avant le dîner ?", type: "dialogue" }
+          ]},
+          { id: 39, img: "images/tomo3/comic/pagina04/panel_03.jpg", lines: [
+            { speaker: "Madou", color: "#C77D1E", text: "Oui, maman. Nous nous lavons les mains maintenant.", type: "dialogue" },
+            { speaker: "Minimargot", color: "#A78BFA", text: "Elles sont très propres !", type: "narration" }
+          ]},
+          { id: 40, img: "images/tomo3/comic/pagina04/panel_04.jpg", lines: [
+            { speaker: "Margot", color: "#4B3F72", text: "Naele a une routine 'beauty' moderne de deux mille vingt-sept (2027) !", type: "dialogue" }
+          ]},
+          { id: 41, img: "images/tomo3/comic/pagina04/panel_05.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Je suis mouillée. Je me douche avec de l'eau chaude.", type: "dialogue" }
+          ]},
+          { id: 42, img: "images/tomo3/comic/pagina04/panel_06.jpg", lines: [
+            { speaker: "Madou", color: "#C77D1E", text: "Qu'est-ce que c'est ?! C'est très bizarre ! J'ai peur !", type: "dialogue" }
+          ]},
+          { id: 43, img: "images/tomo3/comic/pagina04/panel_07.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Je me douche, tu te brosses, nous nous lavons... J'adore ma routine.", type: "dialogue" }
+          ]},
+          { id: 44, img: "images/tomo3/comic/pagina04/panel_08.jpg", lines: [
+            { speaker: "Minimargot", color: "#A78BFA", text: "Ils mangent tous dans la salle à manger.", type: "narration" }
+          ]},
+          { id: 45, img: "images/tomo3/comic/pagina04/panel_09.jpg", lines: [
+            { speaker: "Minimargot", color: "#A78BFA", text: "Naele m'appelle toujours quand elle peut.", type: "narration" }
+          ]},
+          { id: 46, img: "images/tomo3/comic/pagina04/panel_10.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Margot, je pratique beaucoup le français ! J'aime l'histoire et les maths !", type: "dialogue" }
+          ]},
+          { id: 47, img: "images/tomo3/comic/pagina04/panel_11.jpg", lines: [
+            { speaker: "Margot", color: "#4B3F72", text: "C'est super, Naele ! Courage. La semaine prochaine, j'ai de grandes révélations !", type: "dialogue" }
+          ]},
+          { id: 48, img: "images/tomo3/comic/pagina04/panel_12.jpg", lines: [
+            { speaker: "Minimargot", color: "#A78BFA", text: "Naele se fatigue de tant apprendre le français !", type: "narration" }
+          ]}
+        ]
+      },
+      {
+        page: 5,
+        panels: [
+          { id: 49, img: "images/tomo3/comic/pagina05/panel_01.jpg", lines: [
+            { speaker: "Margot", color: "#4B3F72", text: "Naele adore manger des croissants. Tous les jours, les amis entrent ensemble à la boulangerie.", type: "dialogue" }
+          ]},
+          { id: 50, img: "images/tomo3/comic/pagina05/panel_02.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Bonjour !", type: "dialogue" },
+            { speaker: "Céline", color: "#1E88A8", text: "Miam !", type: "dialogue" },
+            { speaker: "Sebas", color: "#4A5568", text: "J'ai faim !", type: "dialogue" }
+          ]},
+          { id: 51, img: "images/tomo3/comic/pagina05/panel_03.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Hé Sebas ! J'adore ta chemise ! Mon père adore ce groupe de rock !", type: "dialogue" }
+          ]},
+          { id: 52, img: "images/tomo3/comic/pagina05/panel_04.jpg", lines: [
+            { speaker: "Sebas", color: "#4A5568", text: "Ton père ?! Encore ?! Ce n'est pas possible... C'est un nouvel album de l'année dernière !", type: "dialogue" }
+          ]},
+          { id: 53, img: "images/tomo3/comic/pagina05/panel_05.jpg", lines: [
+            { speaker: "Madou", color: "#C77D1E", text: "Un croissant, s'il vous plaît, madame !", type: "dialogue" },
+            { speaker: "Boulangère", color: "#8B5E3C", text: "Oui ! Ça fait quatre (4) francs, s'il vous plaît.", type: "dialogue" }
+          ]},
+          { id: 54, img: "images/tomo3/comic/pagina05/panel_06.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Quatre (4) francs... Ça fait soixante (60) centimes d'euro. Mais... je n'ai pas d'argent français !", type: "dialogue" }
+          ]},
+          { id: 55, img: "images/tomo3/comic/pagina05/panel_07.jpg", lines: [
+            { speaker: "Madou", color: "#C77D1E", text: "Donnez-moi un autre croissant pour mon amie, s'il vous plaît !", type: "dialogue" }
+          ]},
+          { id: 56, img: "images/tomo3/comic/pagina05/panel_08.jpg", lines: [
+            { speaker: "Boulangère", color: "#8B5E3C", text: "Prenez les filles, et bon appétit !", type: "dialogue" },
+            { speaker: "Naele", color: "#B23A48", text: "Merci beaucoup, madame ! Au revoir !", type: "dialogue" }
+          ]},
+          { id: 57, img: "images/tomo3/comic/pagina05/panel_09.jpg", lines: [
+            { speaker: "Céline", color: "#1E88A8", text: "Deux pains au chocolat !", type: "dialogue" },
+            { speaker: "Laetitia", color: "#8E5B9E", text: "Un croissant !", type: "dialogue" },
+            { speaker: "Sabrina", color: "#B5541F", text: "Pour moi aussi !", type: "dialogue" },
+            { speaker: "Sebas", color: "#4A5568", text: "Pour moi aussi !", type: "dialogue" }
+          ]},
+          { id: 58, img: "images/tomo3/comic/pagina05/panel_10.jpg", lines: [
+            { speaker: "Céline", color: "#1E88A8", text: "J'adore le pain au chocolat ! C'est super bon !", type: "dialogue" },
+            { speaker: "Madou", color: "#C77D1E", text: "Moi aussi ! C'est délicieux !", type: "dialogue" }
+          ]},
+          { id: 59, img: "images/tomo3/comic/pagina05/panel_11.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Le pain au chocolat de Sebas est énorme ! J'aime beaucoup mes amis.", type: "dialogue" }
+          ]},
+          { id: 60, img: "images/tomo3/comic/pagina05/panel_12.jpg", lines: [
+            { speaker: "Minimargot", color: "#A78BFA", text: "Les amis mangent ensemble après le collège.", type: "narration" }
+          ]}
+        ]
       }
     ]
   },
