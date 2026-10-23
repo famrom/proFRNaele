@@ -230,6 +230,93 @@ const TOMO3 = {
             { speaker: "Minimargot", color: "#A78BFA", text: "Les amis mangent ensemble après le collège.", type: "narration" }
           ]}
         ]
+      },
+      {
+        page: 6,
+        panels: [
+          { id: 61, img: "images/tomo3/comic/pagina06/panel_01.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "J'adore le cours de musique ! C'est ma classe favorite.", type: "dialogue" }
+          ]},
+          { id: 62, img: "images/tomo3/comic/pagina06/panel_02.jpg", lines: [
+            { speaker: "Prof de musique", color: "#6F7D3A", text: "Bonjour la classe ! Aujourd'hui, nous jouons de la musique !", type: "dialogue" }
+          ]},
+          { id: 63, img: "images/tomo3/comic/pagina06/panel_03.jpg", lines: [
+            { speaker: "Minimargot", color: "#A78BFA", text: "Madou aime beaucoup jouer de la musique.", type: "narration" }
+          ]},
+          { id: 64, img: "images/tomo3/comic/pagina06/panel_04.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Waouh... Elle est musicienne ! Madou joue très bien de la flûte traversière.", type: "dialogue" }
+          ]},
+          { id: 65, img: "images/tomo3/comic/pagina06/panel_05.jpg", lines: [
+            { speaker: "Prof de musique", color: "#6F7D3A", text: "Bravo Madou ! Tu joues magnifiquement ! C'est parfait !", type: "dialogue" }
+          ]},
+          { id: 66, img: "images/tomo3/comic/pagina06/panel_06.jpg", lines: [
+            { speaker: "Sebas", color: "#4A5568", text: "Moi, je ne joue pas bien... C'est difficile !", type: "dialogue" },
+            { speaker: "Sabrina", color: "#B5541F", text: "Oui, Sebas n'a pas de rythme !", type: "dialogue" }
+          ]},
+          { id: 67, img: "images/tomo3/comic/pagina06/panel_07.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Hé Sebas ! J'adore ta chemise ! Mon père adore ce groupe de rock !", type: "dialogue" }
+          ]},
+          { id: 68, img: "images/tomo3/comic/pagina06/panel_08.jpg", lines: [] },
+          { id: 69, img: "images/tomo3/comic/pagina06/panel_09.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Qu'est-ce que Céline cherche dans son sac ?", type: "dialogue" }
+          ]},
+          { id: 70, img: "images/tomo3/comic/pagina06/panel_10.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Un code QR ?! Sur une cassette de mille neuf cent quatre-vingt-douze (1992) ?! Ce n'est pas normal !", type: "dialogue" }
+          ]},
+          { id: 71, img: "images/tomo3/comic/pagina06/panel_11.jpg", lines: [
+            { speaker: "Céline", color: "#1E88A8", text: "Oh... Tu aimes ma cassette, Naele ? C'est de la musique... ancienne.", type: "dialogue" },
+            { speaker: "Naele", color: "#B23A48", text: "Tu me prêtes la cassette pour l'écouter, s'il vous plaît ?", type: "dialogue" },
+            { speaker: "Minimargot", color: "#A78BFA", text: "Quel mystère !", type: "narration" }
+          ]},
+          { id: 72, img: "images/tomo3/comic/pagina06/panel_12.jpg", lines: [
+            { speaker: "SFX", color: "#8A7B4E", text: "DREEEEEEING !", type: "sfx", sfxType: "schoolbell" },
+            { speaker: "Naele", color: "#B23A48", text: "Super ! La classe finit !", type: "dialogue" }
+          ]}
+        ]
+      },
+      {
+        page: 7,
+        panels: [
+          { id: 73, img: "images/tomo3/comic/pagina07/panel_01.jpg", lines: [
+            { speaker: "Margot", color: "#4B3F72", text: "Le mercredi après-midi, il n'y a pas de collège ! Les enfants ont du temps libre. Ils ont rendez-vous à la salle d'arcade.", type: "dialogue" }
+          ]},
+          { id: 74, img: "images/tomo3/comic/pagina07/panel_02.jpg", lines: [
+            { speaker: "SFX", color: "#8A7B4E", text: "BIP-BIP ! BOOM ! BLIP !", type: "sfx", sfxType: "beep" }
+          ]},
+          { id: 75, img: "images/tomo3/comic/pagina07/panel_03.jpg", lines: [
+            { speaker: "Sebas", color: "#4A5568", text: "Hé, les filles ! Ici ! Céline et Sabrina jouent au jeu Pang !", type: "dialogue" }
+          ]},
+          { id: 76, img: "images/tomo3/comic/pagina07/panel_04.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Hé Sebas ! J'adore ton style ! Mon père a la même chemise et la même écharpe !", type: "dialogue" }
+          ]},
+          { id: 77, img: "images/tomo3/comic/pagina07/panel_05.jpg", lines: [
+            { speaker: "Sebas", color: "#4A5568", text: "Impossible !", type: "dialogue" }
+          ]},
+          { id: 78, img: "images/tomo3/comic/pagina07/panel_06.jpg", lines: [
+            { speaker: "Laetitia", color: "#8E5B9E", text: "Céline et Sabrina jouent très bien. Elles vont battre le record !", type: "dialogue" }
+          ]},
+          { id: 79, img: "images/tomo3/comic/pagina07/panel_07.jpg", lines: [
+            { speaker: "Sabrina", color: "#B5541F", text: "J'adore ce jeu ! Attention à la grosse balle, Céline !", type: "dialogue" }
+          ]},
+          { id: 80, img: "images/tomo3/comic/pagina07/panel_08.jpg", lines: [
+            { speaker: "Madou", color: "#C77D1E", text: "Naele, tu veux jouer ? Regarde, le jeu Snow Bros ! C'est un jeu en équipe !", type: "dialogue" },
+            { speaker: "Naele", color: "#B23A48", text: "Oui ! J'aime les jeux vidéo !", type: "dialogue" }
+          ]},
+          { id: 81, img: "images/tomo3/comic/pagina07/panel_09.jpg", lines: [
+            { speaker: "SFX", color: "#8A7B4E", text: "CLING !", type: "sfx", sfxType: "coin" },
+            { speaker: "Madou", color: "#C77D1E", text: "Allez ! Nous jouons ensemble !", type: "dialogue" }
+          ]},
+          { id: 82, img: "images/tomo3/comic/pagina07/panel_10.jpg", lines: [
+            { speaker: "SFX", color: "#8A7B4E", text: "WAH-WAH-WAH...", type: "sfx", sfxType: "gameover" }
+          ]},
+          { id: 83, img: "images/tomo3/comic/pagina07/panel_11.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Oh non ! Nous perdons très rapidement !", type: "dialogue" },
+            { speaker: "Madou", color: "#C77D1E", text: "Oui... Nous sommes vraiment mauvaises à ce jeu !", type: "dialogue" }
+          ]},
+          { id: 84, img: "images/tomo3/comic/pagina07/panel_12.jpg", lines: [
+            { speaker: "Minimargot", color: "#A78BFA", text: "Les filles n'aiment pas perdre au jeu vidéo !", type: "narration" }
+          ]}
+        ]
       }
     ]
   },

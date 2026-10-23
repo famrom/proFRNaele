@@ -204,6 +204,34 @@ function playCrunch() {
     src.start(now + offset); src.stop(now + offset + 0.06);
   }
 }
+function playCoin() {
+  const ctx = getAudioCtx(); const now = ctx.currentTime;
+  [0, 0.09].forEach((offset, i) => {
+    const osc = ctx.createOscillator(); osc.type = "square";
+    osc.frequency.value = i === 0 ? 988 : 1319;
+    const gain = ctx.createGain();
+    gain.gain.setValueAtTime(0.0001, now + offset);
+    gain.gain.exponentialRampToValueAtTime(0.15, now + offset + 0.01);
+    gain.gain.exponentialRampToValueAtTime(0.0001, now + offset + (i === 0 ? 0.08 : 0.4));
+    osc.connect(gain); gain.connect(ctx.destination);
+    osc.start(now + offset); osc.stop(now + offset + 0.45);
+  });
+}
+function playGameOver() {
+  const ctx = getAudioCtx(); const now = ctx.currentTime;
+  [392, 370, 349, 262].forEach((freq, i) => {
+    const offset = i * 0.28;
+    const osc = ctx.createOscillator(); osc.type = "square";
+    osc.frequency.setValueAtTime(freq, now + offset);
+    if (i === 3) osc.frequency.exponentialRampToValueAtTime(freq * 0.8, now + offset + 0.6);
+    const gain = ctx.createGain();
+    gain.gain.setValueAtTime(0.0001, now + offset);
+    gain.gain.exponentialRampToValueAtTime(0.14, now + offset + 0.02);
+    gain.gain.exponentialRampToValueAtTime(0.0001, now + offset + (i === 3 ? 0.6 : 0.25));
+    osc.connect(gain); gain.connect(ctx.destination);
+    osc.start(now + offset); osc.stop(now + offset + (i === 3 ? 0.65 : 0.3));
+  });
+}
 function playDongDong() {
   const ctx = getAudioCtx(); const now = ctx.currentTime;
   [0, 0.6].forEach((offset) => {
@@ -264,6 +292,8 @@ function playSfx(type) {
   else if (type === "schoolbell") playSchoolBell();
   else if (type === "dongdong") playDongDong();
   else if (type === "crunch") playCrunch();
+  else if (type === "coin") playCoin();
+  else if (type === "gameover") playGameOver();
   else if (type === "yum") playYum();
 }
 
