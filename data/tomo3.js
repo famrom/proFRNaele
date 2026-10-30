@@ -317,6 +317,48 @@ const TOMO3 = {
             { speaker: "Minimargot", color: "#A78BFA", text: "Les filles n'aiment pas perdre au jeu vidéo !", type: "narration" }
           ]}
         ]
+      },
+      {
+        page: 8,
+        panels: [
+          { id: 85, img: "images/tomo3/comic/pagina08/panel_01.jpg", lines: [
+            { speaker: "Séverine", color: "#A1527A", text: "Bonjour les filles ! Vous faites les devoirs de l'école ?", type: "dialogue" }
+          ]},
+          { id: 86, img: "images/tomo3/comic/pagina08/panel_02.jpg", lines: [
+            { speaker: "Madou", color: "#C77D1E", text: "Oui, maman ! Nous faisons les devoirs maintenant !", type: "dialogue" }
+          ]},
+          { id: 87, img: "images/tomo3/comic/pagina08/panel_03.jpg", lines: [
+            { speaker: "Félix", color: "#2F6F4E", text: "Après les devoirs, nous mangeons ! Et c'est vendredi : nous allons au vidéoclub pour louer un film !", type: "dialogue" }
+          ]},
+          { id: 88, img: "images/tomo3/comic/pagina08/panel_04.jpg", lines: [
+            { speaker: "Minimargot", color: "#A78BFA", text: "Je ne comprends pas... Je ne vois pas les filles travailler si vite normalement !", type: "narration" }
+          ]},
+          { id: 89, img: "images/tomo3/comic/pagina08/panel_05.jpg", lines: [
+            { speaker: "SFX", color: "#8A7B4E", text: "CLAC !", type: "sfx", sfxType: "clack" },
+            { speaker: "Madou", color: "#C77D1E", text: "Fini ! Les devoirs sont finis !", type: "dialogue" }
+          ]},
+          { id: 90, img: "images/tomo3/comic/pagina08/panel_06.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Félix ! Nous allons au vidéoclub maintenant !", type: "dialogue" }
+          ]},
+          { id: 91, img: "images/tomo3/comic/pagina08/panel_07.jpg", lines: [
+            { speaker: "Madou", color: "#C77D1E", text: "Regarde Naele ! Il y a beaucoup de films en cassette !", type: "dialogue" }
+          ]},
+          { id: 92, img: "images/tomo3/comic/pagina08/panel_08.jpg", lines: [
+            { speaker: "Madou", color: "#C77D1E", text: "Oh ! J'adore ce film ! L'acteur est vraiment beau !", type: "dialogue" }
+          ]},
+          { id: 93, img: "images/tomo3/comic/pagina08/panel_09.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Et ce film ? Regarde... Comme toi et moi, Madou !", type: "dialogue" }
+          ]},
+          { id: 94, img: "images/tomo3/comic/pagina08/panel_10.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Et ça ? C'est l'histoire de Peter Pan, mais il est grand !", type: "dialogue" }
+          ]},
+          { id: 95, img: "images/tomo3/comic/pagina08/panel_11.jpg", lines: [
+            { speaker: "Minimargot", color: "#A78BFA", text: "C'est évident..... Elles choisissent le film avec le bel acteur !", type: "narration" }
+          ]},
+          { id: 96, img: "images/tomo3/comic/pagina08/panel_12.jpg", lines: [
+            { speaker: "Madou", color: "#C77D1E", text: "Nous choisissons ce film, s'il vous plaît !", type: "dialogue" }
+          ]}
+        ]
       }
     ]
   },
