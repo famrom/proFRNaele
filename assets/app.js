@@ -204,6 +204,23 @@ function playCrunch() {
     src.start(now + offset); src.stop(now + offset + 0.06);
   }
 }
+function playBuzz() {
+  const ctx = getAudioCtx(); const now = ctx.currentTime;
+  const osc = ctx.createOscillator(); osc.type = "sawtooth";
+  osc.frequency.setValueAtTime(110, now);
+  const src = ctx.createBufferSource(); src.buffer = noiseBuffer(ctx, 0.9);
+  const nFilter = ctx.createBiquadFilter(); nFilter.type = "highpass"; nFilter.frequency.value = 3000;
+  const nGain = ctx.createGain(); nGain.gain.value = 0.08;
+  const gain = ctx.createGain();
+  gain.gain.setValueAtTime(0.0001, now);
+  gain.gain.exponentialRampToValueAtTime(0.12, now + 0.05);
+  gain.gain.setValueAtTime(0.12, now + 0.7);
+  gain.gain.exponentialRampToValueAtTime(0.0001, now + 0.9);
+  osc.connect(gain); src.connect(nFilter); nFilter.connect(nGain); nGain.connect(gain);
+  gain.connect(ctx.destination);
+  osc.start(now); src.start(now);
+  osc.stop(now + 0.9); src.stop(now + 0.9);
+}
 function playCoin() {
   const ctx = getAudioCtx(); const now = ctx.currentTime;
   [0, 0.09].forEach((offset, i) => {
@@ -294,6 +311,7 @@ function playSfx(type) {
   else if (type === "crunch") playCrunch();
   else if (type === "coin") playCoin();
   else if (type === "gameover") playGameOver();
+  else if (type === "buzz") playBuzz();
   else if (type === "yum") playYum();
 }
 

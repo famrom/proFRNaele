@@ -359,6 +359,46 @@ const TOMO3 = {
             { speaker: "Madou", color: "#C77D1E", text: "Nous choisissons ce film, s'il vous plaît !", type: "dialogue" }
           ]}
         ]
+      },
+      {
+        page: 9,
+        panels: [
+          { id: 97, img: "images/tomo3/comic/pagina09/panel_01.jpg", lines: [
+            { speaker: "Félix", color: "#2F6F4E", text: "Attention, je mets la cassette vidéo !", type: "dialogue" }
+          ]},
+          { id: 98, img: "images/tomo3/comic/pagina09/panel_02.jpg", lines: [
+            { speaker: "SFX", color: "#8A7B4E", text: "CLAC... CLIC.", type: "sfx", sfxType: "clack" }
+          ]},
+          { id: 99, img: "images/tomo3/comic/pagina09/panel_03.jpg", lines: [
+            { speaker: "SFX", color: "#8A7B4E", text: "BZZZZ...", type: "sfx", sfxType: "buzz" }
+          ]},
+          { id: 100, img: "images/tomo3/comic/pagina09/panel_04.jpg", lines: [
+            { speaker: "Frère", color: "#3D5A80", text: "Miam ! J'adore le fromage et les frites !", type: "dialogue" }
+          ]},
+          { id: 101, img: "images/tomo3/comic/pagina09/panel_05.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Le pop-corn et le pique-nique devant la télévision... C'est fantastique !", type: "dialogue" }
+          ]},
+          { id: 102, img: "images/tomo3/comic/pagina09/panel_06.jpg", lines: [] },
+          { id: 103, img: "images/tomo3/comic/pagina09/panel_07.jpg", lines: [
+            { speaker: "Madou", color: "#C77D1E", text: "L'acteur est vraiment magnifique. J'adore ce film !", type: "dialogue" }
+          ]},
+          { id: 104, img: "images/tomo3/comic/pagina09/panel_08.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Oui Madou, tu as raison ! Le film est très bon !", type: "dialogue" }
+          ]},
+          { id: 105, img: "images/tomo3/comic/pagina09/panel_09.jpg", lines: [
+            { speaker: "Minimargot", color: "#A78BFA", text: "C'est beau ! Il y a des choses qui ne changent pas...", type: "narration" }
+          ]},
+          { id: 106, img: "images/tomo3/comic/pagina09/panel_10.jpg", lines: [
+            { speaker: "Félix", color: "#2F6F4E", text: "Allez, le film est fini ! C'est l'heure de dormir !", type: "dialogue" }
+          ]},
+          { id: 107, img: "images/tomo3/comic/pagina09/panel_11.jpg", lines: [
+            { speaker: "Madou", color: "#C77D1E", text: "Bonne nuit papa ! Bonne nuit maman !", type: "dialogue" },
+            { speaker: "Séverine", color: "#A1527A", text: "Bonne nuit les filles !", type: "dialogue" }
+          ]},
+          { id: 108, img: "images/tomo3/comic/pagina09/panel_12.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Maintenant... J'appelle Margot. C'est le moment.", type: "dialogue" }
+          ]}
+        ]
       }
     ]
   },
