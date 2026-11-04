@@ -399,6 +399,49 @@ const TOMO3 = {
             { speaker: "Naele", color: "#B23A48", text: "Maintenant... J'appelle Margot. C'est le moment.", type: "dialogue" }
           ]}
         ]
+      },
+      {
+        page: 10,
+        panels: [
+          { id: 109, img: "images/tomo3/comic/pagina10/panel_01.jpg", lines: [
+            { speaker: "SFX", color: "#8A7B4E", text: "BIP... BOP... BEEP...", type: "sfx", sfxType: "beep" }
+          ]},
+          { id: 110, img: "images/tomo3/comic/pagina10/panel_02.jpg", lines: [
+            { speaker: "Margot", color: "#4B3F72", text: "Allô Naele ? Tu as des nouveautés ? Tout va bien à Vannes ?", type: "dialogue" }
+          ]},
+          { id: 111, img: "images/tomo3/comic/pagina10/panel_03.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Margot, écoute-moi. J'ai des informations très bizarres au collège !", type: "dialogue" }
+          ]},
+          { id: 112, img: "images/tomo3/comic/pagina10/panel_04.jpg", lines: [
+            { speaker: "Margot", color: "#4B3F72", text: "Des informations bizarres ? Qu'est-ce que c'est ? Dis-moi !", type: "dialogue" }
+          ]},
+          { id: 113, img: "images/tomo3/comic/pagina10/panel_05.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Une fille de ma classe s'appelle Céline. Elle porte un Walkman de mille neuf cent quatre-vingt-douze (1992)...", type: "dialogue" }
+          ]},
+          { id: 114, img: "images/tomo3/comic/pagina10/panel_06.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "...Mais les écouteurs de Céline sont blancs ! Ce sont des écouteurs du futur de l'année deux mille dix (2010) !", type: "dialogue" }
+          ]},
+          { id: 115, img: "images/tomo3/comic/pagina10/panel_07.jpg", lines: [
+            { speaker: "Margot", color: "#4B3F72", text: "Quoi ?! Des écouteurs du futur en mille neuf cent quatre-vingt-douze (1992) ?! C'est impossible !", type: "dialogue" }
+          ]},
+          { id: 116, img: "images/tomo3/comic/pagina10/panel_08.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "Oui ! Et aujourd'hui, en cours de musique, Céline a une cassette audio transparente...", type: "dialogue" }
+          ]},
+          { id: 117, img: "images/tomo3/comic/pagina10/panel_09.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "...Et sur la cassette, il y a un code technologique moderne ! Un code imprimé !", type: "dialogue" }
+          ]},
+          { id: 118, img: "images/tomo3/comic/pagina10/panel_10.jpg", lines: [
+            { speaker: "Margot", color: "#4B3F72", text: "Un code moderne ?! Céline n'est pas une fille normale de cette époque ! C'est une anomalie !", type: "dialogue" }
+          ]},
+          { id: 119, img: "images/tomo3/comic/pagina10/panel_11.jpg", lines: [
+            { speaker: "Margot", color: "#4B3F72", text: "Naele, quel est le mystère derrière Céline ? Je cherche des réponses ici, en deux mille vingt-sept (2027) !", type: "dialogue" }
+          ]},
+          { id: 120, img: "images/tomo3/comic/pagina10/panel_12.jpg", lines: [
+            { speaker: "Naele", color: "#B23A48", text: "D'accord Margot ! J'observe ce mystère la semaine prochaine ! Bonne nuit !", type: "dialogue" },
+            { speaker: "Margot", color: "#4B3F72", text: "Bonne nuit Naele ! Soyez prudente !", type: "dialogue" },
+            { speaker: "Narrateur", color: "#5B5548", text: "FIN DU CHAPITRE TROIS (3).", type: "narration" }
+          ]}
+        ]
       }
     ]
   },
