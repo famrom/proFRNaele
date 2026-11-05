@@ -438,6 +438,27 @@ function renderLockScreen(tomo) {
   });
 }
 
+function openLightbox(src) {
+  const old = document.getElementById("lightbox");
+  if (old) old.remove();
+  const box = document.createElement("div");
+  box.id = "lightbox";
+  box.className = "lightbox";
+  box.innerHTML = `
+    <button class="lightbox-close" aria-label="Cerrar">✕</button>
+    <div class="lightbox-scroll"><img src="${src}" class="lightbox-img" draggable="false"></div>
+    <div class="lightbox-hint">Toca la imagen para acercar / alejar</div>
+  `;
+  document.body.appendChild(box);
+  const img = box.querySelector(".lightbox-img");
+  let zoomed = false;
+  img.addEventListener("click", () => {
+    zoomed = !zoomed;
+    img.classList.toggle("zoomed", zoomed);
+  });
+  box.querySelector(".lightbox-close").addEventListener("click", () => box.remove());
+}
+
 function renderGrammar() {
   const tomo = getTomo();
   const grammarPages = tomo.grammar || [];
@@ -476,6 +497,8 @@ function renderGrammar() {
   document.querySelectorAll(".word").forEach(el => {
     el.addEventListener("click", () => openTranslation(el.dataset.word));
   });
+  const posterEl = document.querySelector(".gram-poster");
+  if (posterEl) posterEl.addEventListener("click", () => openLightbox(posterEl.getAttribute("src")));
   document.querySelectorAll("[data-gram-speak]").forEach(el => {
     el.addEventListener("click", () => speak(el.dataset.gramSpeak, "Naele"));
   });
@@ -524,11 +547,12 @@ function renderCharacters() {
     </div>
     <div class="panel-wrap" id="charPanelWrap">
       <div class="panel-img-holder">
-        <img src="${panel.img}" alt="${escapeHtml(character.name)}" draggable="false">
+        <img src="${panel.img}" alt="${escapeHtml(character.name)}" draggable="false" class="char-img">
       </div>
       <div class="nav-btn left ${charPanel === 0 ? "hidden" : ""}" id="charPrevBtn">‹</div>
       <div class="nav-btn right ${charPanel === character.panels.length - 1 ? "hidden" : ""}" id="charNextBtn">›</div>
     </div>
+    <div class="zoom-hint">🔍 Toca la imagen para ampliarla</div>
     <div class="content">
       ${linesHtml}
     </div>
@@ -554,6 +578,9 @@ function renderCharacters() {
       speak(panel.lines[li].text, panel.lines[li].speaker);
     });
   });
+
+  const charImgEl = document.querySelector(".char-img");
+  if (charImgEl) charImgEl.addEventListener("click", () => openLightbox(charImgEl.getAttribute("src")));
 
   const wrap = document.getElementById("charPanelWrap");
   let touchStartX = null;

@@ -445,6 +445,16 @@ const TOMO3 = {
       }
     ]
   },
-  characters: [],
+  characters: [
+    { id: "minimargot", name: "Minimargot", color: "#A78BFA", panels: [
+      { img: "images/tomo3/characters/minimargot.jpg", lines: [
+        { speaker: "Minimargot", color: "#A78BFA", text: "Bonjour ! Je m'appelle Mini-Margot !", type: "narration" },
+        { speaker: "Minimargot", color: "#A78BFA", text: "Je suis un élément méta-narratif de l'histoire.", type: "narration" },
+        { speaker: "Minimargot", color: "#A78BFA", text: "Je ne suis pas physiquement avec Naele et Madou au collège.", type: "narration" },
+        { speaker: "Minimargot", color: "#A78BFA", text: "Je suis ici pour aider le lecteur et pour connecter l'année mille neuf cent quatre-vingt-douze (1992) avec l'année deux mille vingt-sept (2027) !", type: "narration" },
+        { speaker: "Minimargot", color: "#A78BFA", text: "Je suis la guide secrète du manga !", type: "narration" }
+      ]}
+    ]}
+  ],
   grammar: []
 };
